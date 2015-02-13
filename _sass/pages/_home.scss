@@ -5,6 +5,9 @@
     height:110vh;
     text-align:center;
     position:relative;
+    
+    z-index:0;
+    @include linear-gradient(50deg, #ddd 20%, white 100%);
     .logo {
         z-index:1;
         position: relative;

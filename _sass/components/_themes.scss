@@ -2,13 +2,15 @@
 *  BACKGROUND
 **/
 
-
+.summary {
+    position:relative;
+}
 #background {
+    z-index:-1;
     text-align:center;
-    background:$bg-color;
+    background:transparent;
     height:100%;
-    position:absolute; top:0; bottom:0; right:0; left:0;
-    
+    position:absolute; top:0; bottom:0; right:0; left:0;   
     transition: all $transition-out ease-out;
 
 /*     background: rgba(221,221,221,1);
@@ -20,7 +22,7 @@
     background: linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(249,249,249,1) 82%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff', GradientType=1 ); */
     
-    @include linear-gradient(50deg, #ddd 20%, white 100%);
+    
 }
 
 

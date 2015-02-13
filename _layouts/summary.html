@@ -8,11 +8,13 @@ layout: default
    {% include browser-outdated.html %}
 
     <div class="summary">
+        {% include theme-switcher.html %}
         {% include header.html %}
         <div class="content">
             <div class="letter-efect"></div>
             {{ content }}
         </div>
+        
         {% include footer.html %}
     </div>
 

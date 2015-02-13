@@ -13,6 +13,7 @@ $le-border-radius: 4px;
     }
 
     background-color:$summary-bg-color;
+    z-index:0;
     .content {
         @include outer-container();
         @include pad(30px 20px);
