@@ -1,0 +1,55 @@
+/*
+*   LOGOTYPE
+**/
+.home .logo , .logo-inner {
+
+    font-family: $brandonGrotesque;
+    svg {
+        width:95%;
+        max-height:196.5px;
+        max-width:306px;  
+    }
+    
+
+
+    circle {
+        fill:none;
+        stroke:$logo-color;
+        transition: all $transition-out ease-out;
+    }
+    circle:hover {
+        stroke:$logo-hover-color!important;
+        transition: all $transition-in ease-out;
+    }
+    path {
+        fill: $logo-color; 
+        stroke:none;
+        transition: all $transition-out*2 ease-out;
+    } 
+    path:hover {
+        fill:$logo-hover-color!important;
+        transition: all $transition-in ease-out;
+    }
+
+
+    .headline {
+        position: relative;
+        font-weight:900;
+        text-align:right;
+        font-size:16px;
+        color:$logo-headline-color;
+        line-height:1.2;
+        transition: all $transition-out ease-out;
+        @include animation(init 2s $ease-out-quad);
+        @include keyframes(init) {
+            from {
+                @include transform(translateX(-100vw));
+
+            }
+
+            to {
+                @include transform(translateX(0));
+            }
+        }
+    }
+}

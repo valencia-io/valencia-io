@@ -1,0 +1,15 @@
+{
+// Configure your Run and Preview buttons here.
+
+// Run button configuration
+  "commands": {
+        "Start Jekyll": "jekyll serve --host 0.0.0.0 --port 9500",
+        "Deploy":"cd;cd workspace;git add .; git commit ; git push "
+  },
+
+// Preview button configuration
+  "preview": {
+        "Preview": "https://{{domain}}:9500/"
+  }
+
+}

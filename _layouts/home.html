@@ -1,0 +1,22 @@
+---
+layout: default
+
+# home has no header
+---
+
+{% include head.html layout="home" %}
+
+<body>
+    {% include browser-outdated.html %}
+
+
+    <div class="home">
+        {{ content }}
+        {% include footer.html %}
+    </div>
+
+</body>
+{% include scripts.html %}
+
+
+

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{% include head.html layout="summary" %}
+
+<body>
+   {% include browser-outdated.html %}
+
+    <div class="summary">
+        {% include header.html %}
+        <div class="content">
+            <div class="letter-efect"></div>
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
+
+</body>
+{% include scripts.html %}
+

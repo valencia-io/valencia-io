@@ -1,0 +1,132 @@
+@import "../components/logo";
+@import "../components/themes";
+
+#s1 {
+    height:110vh;
+    text-align:center;
+    position:relative;
+    .logo {
+        z-index:1;
+        position: relative;
+        top: 40%;
+        @include transform(translateY(-50%));    
+        display: inline-block;
+        padding:50px 10px;
+    }
+}
+
+#s2 {
+    background: $dark-gray;
+    color: $light-gray;
+
+    margin-top:-10vh;
+    z-index:1;
+    @include outer-container(100%);
+
+
+}
+#s3 {
+    background: $blue;
+    color:white;
+}
+
+#s4 {
+    background: $bg-color;
+}
+
+section:not(#s1) {
+    transition:all 3s linear;
+    min-height:90vh;
+    padding-bottom:70px;
+    &::before {
+        z-index:0;
+        content:"";
+        z-index:10;
+        width: 100vw;
+        height: 20vh;
+        @include transform(scaleX(1.5) translateY(-7vh));
+        border-radius:0 100% 0 0;
+        background: inherit;
+        display: block;
+    }
+    article {
+        @include outer-container();
+        @include pad(20px);
+        margin-top:-7vh;
+    }
+}
+
+/* 
+* Go Down
+**/
+.goDown {
+    border:none;
+    color:black;
+    height:100px;
+
+    @include animation(appear .1s infinite linear);
+
+    @include keyframes(appear) {
+        from {
+            opacity:0;
+        }
+        to {
+            opacity:1;            
+        }
+    }
+    @include animation(godown 5s infinite linear);
+    @include keyframes(godown) {
+        from {
+            opacity:1;
+            @include transform(translateY(0));
+
+        }
+        to {
+            opacity:0;
+            @include transform(translateY(25vh));
+        }
+
+
+    }
+    svg {
+        position: absolute;
+        bottom: 20vh;
+        width: 100px;
+        fill: rgba(0, 0, 0,.1);
+        right: 20%;
+    }
+}
+
+/*
+*  Made by
+**/
+
+.madeby { 
+    position:absolute;
+    top:1%;
+    left:50%;
+    transform: translateX(-50%);    
+    fill:white;
+    opacity:.06;
+    display:inline-block;
+    color:white;
+    font-size:20px;
+    font-family: 'BrandonGrotesque-Regular', $helvetica;
+    line-height:0.8;
+}
+.madeby:before { 
+    content:"Made with ";
+    vertical-align:middle;
+    position:relative;
+    top:-7px;
+}
+.madeby:after { 
+    content:" in Valencia city";
+    vertical-align:middle;
+    position:relative;
+    top:-7px;
+
+}
+
+
+

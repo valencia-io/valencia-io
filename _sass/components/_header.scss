@@ -1,0 +1,31 @@
+header {
+    height: 100px;    
+    margin: 10px;
+    @include media( $medium-screen) {
+        height: 150px;    
+        margin: 20px;  
+    }
+
+}
+header .logo-inner {
+    max-height: inherit;
+    max-width: 140px;
+    margin:auto;
+    @include media( $medium-screen) {
+        max-height:150px;
+        max-width:200px;   
+    }
+    
+    svg {
+        max-height: inherit;
+        max-width:inherit;
+        
+    }
+    path {
+        fill:$logo-color;
+    }
+    circle {
+        stroke:$logo-color;
+        fill:none;
+    }
+}

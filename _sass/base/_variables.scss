@@ -1,0 +1,73 @@
+$brandonGrotesque:'BrandonGrotesque-Regular', 'Montserrat', $helvetica;
+// Typography
+$base-font-family: 'Libre Baskerville' , $georgia;
+$heading-font-family: $brandonGrotesque;
+
+// Font Sizes
+$base-font-size: 20px;
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+// Other Sizes
+$base-border-radius: 3px;
+$base-spacing: $base-line-height * 1em;
+$small-spacing: $base-spacing / 2;
+$base-z-index: 0;
+
+// Colors
+$blue: #477dca;
+$dark-gray: #333;
+$medium-gray: #999;
+$light-gray: #f1f1f1;
+$pink:#ec008c;
+$green:#00F3A5;
+$red-soft :#FF6347;
+
+$blue-soft:#5592CE;
+$yellow:#FFD810;
+$yellow-darken:#ffc000;
+
+$blue-deep:#440394;
+$gray-brown:#413123;
+$gray-semidark:#333340;
+$paper:#f1f4f1;
+
+//bg colors
+
+$body-bg-color: $paper ;
+$bg-color: $body-bg-color;
+$summary-bg-color: $blue;
+$sumary-content-bg-color:$paper;
+
+
+$logo-color: white;
+/*$bg-color: invert( $logo-color);*/
+
+/*$logo-headline-color: invert( darken($bg-color,20%)) ;*/
+/*$logo-headline-color: invert( lighten($bg-color,20%)) ;*/
+$logo-headline-color: #444 ;
+$logo-hover-color:invert($logo-color);
+
+
+// Font Colors
+$base-background-color: #fff;
+$base-font-color: $dark-gray;
+$action-color: $blue;
+$link-visited: rgba(117, 3, 173, 0.53);
+
+// Border
+$base-border-color: $light-gray;
+$base-border: 1px solid $base-border-color;
+
+// Forms
+$form-box-shadow: inset 0 1px 3px rgba(#000, 0.06);
+$form-box-shadow-focus: $form-box-shadow, 0 0 5px adjust-color($action-color, $lightness: -5%, $alpha: -0.3);
+
+
+//animations transitions
+$transition-out:2s;
+$transition-in:.15s;
+
+$text-transition: 1.2s;

@@ -1,0 +1,77 @@
+// letter effect
+$le-height:6px;
+$le-width: 97%;
+$le-margin-top: -1 *(5px + $le-height);
+$le-margin-left: (100% - $le-width - 0.7%) ;
+$le-border-radius: 4px;
+
+.summary {
+    @include pad(10px);
+
+    @include media($medium-screen) {
+        @include pad(20px);
+    }
+
+    background-color:$summary-bg-color;
+    .content {
+        @include outer-container();
+        @include pad(30px 20px);
+        @include media($medium-screen) {
+            @include pad(60px 40px);
+        }
+        background:$sumary-content-bg-color;
+        border-radius: 4px;
+        position:relative;
+        margin-top: $le-margin-top * -4;
+        .letter-efect {
+            position: absolute;
+            content: "";
+            height:$le-height;
+            width: 97%;
+            top: $le-margin-top;
+            left:$le-margin-left;
+            background: inherit;
+            border-radius: $le-border-radius;
+            opacity:.95;
+            &::before {
+                position: absolute;
+                content: "";
+                height: $le-height;
+                width: $le-width;
+                top: $le-margin-top;
+                left:$le-margin-left;
+                background: inherit;
+                border-radius: $le-border-radius;
+                opacity:.9;
+            }
+            &::after {
+                position: absolute;
+                content: "";
+                height: $le-height;
+                width: $le-width - 3%;
+                top: $le-margin-top * 2;
+                left:$le-margin-left * 2;
+                background: inherit;
+                border-radius: $le-border-radius;
+                opacity:.85;
+
+            }
+        }
+        @include media(max-width $medium-screen) {
+            .letter-efect {
+                height: $le-height - 2px;
+                top: $le-margin-top + 3px;                
+                &::before {
+                    height: $le-height - 2px;
+                    top: $le-margin-top + 3px;                
+                }
+                &::after {
+                    height: $le-height - 2px;
+                    top: ($le-margin-top + 3px )* 2 ;
+                }
+            }
+        }
+
+    }
+
+}

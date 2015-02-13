@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+{% include head.html layout="link" %}
+
+<body>
+   {% include browser-outdated.html %}
+
+    <div class="link">
+        {% include header.html %}
+        <div class="content">
+            {{ content }}
+        </div>
+        {% include footer.html %}
+    </div>
+
+</body>
+{% include scripts.html %}
+
