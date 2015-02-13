@@ -10,5 +10,26 @@ html, body
 {
     height: 100%;
     background:$body-bg-color;
-    
+
+}
+
+
+.summary , footer{
+    @include pad(10px);
+
+    @include media($medium-screen) {
+        @include pad(20px);
+    }
+}
+.footer-content {
+    @include pad(30px 20px);
+    @include media($medium-screen) {
+        @include pad(30px 40px);
+    }
+} 
+.home .content {
+    @include pad(30px 20px);
+    @include media($medium-screen) {
+        @include pad(60px 40px);
+    }
 }

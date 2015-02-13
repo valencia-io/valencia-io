@@ -1,0 +1,20 @@
+footer {
+    display:block;
+    width:100%;
+    min-height:$footer-height;
+    position:fixed;
+    bottom:0;
+    background:$footer-bg-color;
+    color:$footer-text-color;
+    z-index:-1;
+}
+.footer-content{
+    @include outer-container;
+    
+
+}
+.wrapper{
+    margin-bottom:$footer-height;
+
+}
+

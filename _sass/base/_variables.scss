@@ -40,6 +40,8 @@ $body-bg-color: $paper ;
 $bg-color: $body-bg-color;
 $summary-bg-color: $blue;
 $sumary-content-bg-color:$paper;
+$footer-bg-color: $gray-semidark;
+$footer-text-color: white;
 
 
 $logo-color: white;
@@ -55,7 +57,7 @@ $logo-hover-color:invert($logo-color);
 $base-background-color: #fff;
 $base-font-color: $dark-gray;
 $action-color: $blue;
-$link-visited: rgba(117, 3, 173, 0.53);
+$link-visited: rgba(117, 3, 173, 0.4);
 
 // Border
 $base-border-color: $light-gray;
@@ -71,3 +73,7 @@ $transition-out:2s;
 $transition-in:.15s;
 
 $text-transition: 1.2s;
+
+
+//footer measures
+$footer-height: 200px;

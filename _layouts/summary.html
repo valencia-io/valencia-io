@@ -7,7 +7,7 @@ layout: default
 <body>
    {% include browser-outdated.html %}
 
-    <div class="summary">
+    <div class="summary wrapper">
         {% include theme-switcher.html %}
         {% include header.html %}
         <div class="content">
@@ -15,9 +15,9 @@ layout: default
             {{ content }}
         </div>
         
-        {% include footer.html %}
+        
     </div>
-
+{% include footer.html %}
 </body>
 {% include scripts.html %}
 

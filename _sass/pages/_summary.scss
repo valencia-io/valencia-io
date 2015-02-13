@@ -6,14 +6,10 @@ $le-margin-left: (100% - $le-width - 0.7%) ;
 $le-border-radius: 4px;
 
 .summary {
-    @include pad(10px);
 
-    @include media($medium-screen) {
-        @include pad(20px);
-    }
 
     background-color:$summary-bg-color;
-    z-index:0;
+    z-index:1;
     .content {
         @include outer-container();
         @include pad(30px 20px);
@@ -73,6 +69,15 @@ $le-border-radius: 4px;
             }
         }
 
+    }
+    label.theme {
+        
+        
+        position: fixed;
+        z-index:-1;
+        bottom: 10px;
+        opacity: .6;
+        
     }
 
 }

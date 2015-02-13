@@ -8,7 +8,7 @@
 #background {
     z-index:-1;
     text-align:center;
-    background:transparent;
+    background:inherit;
     height:100%;
     position:absolute; top:0; bottom:0; right:0; left:0;   
     transition: all $transition-out ease-out;
