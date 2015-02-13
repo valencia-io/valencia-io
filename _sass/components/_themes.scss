@@ -40,13 +40,20 @@ label.theme {
     margin:15px 6.25vw;
     
     float:left;
-    border-radius:100%;
+    border-radius:33%;
     z-index:1;
     position:absolute;
     bottom:17vh;
-    opacity:.6;
+    opacity:.5;
     cursor: help;  //img chula (emoticono boca abierta?)
+    
+    transition:all 1s linear;
 }
+label.theme:hover{
+    border-radius:100%;  
+    
+}
+
 
 
 .theme:nth-of-type(1) {
