@@ -23,7 +23,10 @@ $medium-gray: #999;
 $light-gray: #f1f1f1;
 
 $pink:#ec008c;
+
 $green:#00F3A5;
+$green-dark:#1693A5 ;
+
 $red:#E8373E ;
 $red-soft :#FF6347;
 
@@ -39,11 +42,11 @@ $gray-brown:#413123;
 $paper:#f1f4f1;
 
 //themes
-$theme-1-bg: $blue-soft;
+$theme-1-bg: $green-dark;
 $theme-1-color: $green;
 
-$theme-2-bg: $red;
-$theme-2-color: black;
+$theme-2-bg: $red-soft;
+$theme-2-color: #333;
 
 $theme-3-bg: $blue-deep;
 $theme-3-color: $pink;
