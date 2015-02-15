@@ -12,7 +12,7 @@
     height:100%;
     position:absolute; top:0; bottom:0; right:0; left:0;   
     transition: all $transition-out ease-out;
-    
+
 }
 
 
@@ -28,7 +28,7 @@ label.theme {
     min-width:17px;
     min-height:17px;
     margin:15px 6.25vw;
-    
+
     float:left;
     border-radius:33%;
     z-index:1;
@@ -36,30 +36,79 @@ label.theme {
     bottom:17vh;
     opacity:.5;
     cursor: help;  //img chula (emoticono boca abierta?)
-    
+
     transition:all 1s linear;
 }
 label.theme:hover{
     border-radius:100%;  
+
+}
+
+:not(.rainbow).theme{
+    &:nth-of-type(1) {
+        left:0vw;
+    }
+    &:nth-of-type(2) {
+        left:20vw;
+    }
+    &:nth-of-type(3) {
+        left:40vw;
+    }
+    &:nth-of-type(4) {
+        left:60vw;
+    }
+    &:nth-of-type(5) {
+        left:80vw;
+    }
+}
+
+.rainbow.theme{
+    &:nth-of-type(1) {
+        left:0vw;
+    }
+    &:nth-of-type(2) {
+        left:20vw;
+    }
+    &:nth-of-type(3) {
+        left:40vw;
+    }
+    &:nth-of-type(4) {
+        left:60vw;
+    }
+    &:nth-of-type(5) {
+        left:80vw;
+    }
+}
+
+
+// rainbow style
+
+.theme.rainbow {
+    width:20%;
+    height:10px;
+    max-width:20%;
+    max-height:35px;
+    min-width:0;
+    min-height:0;
+    margin:0;
     
-}
+    border-radius:0;
+    position: fixed;
+    
+    border-top: solid $footer-bg-color 20px;
+    padding: 10px;
+    
+    
+    z-index:-1;
+    opacity: .6;
+    bottom: 0;
+    &:hover{
+        border-radius:0;
+        @include border-top-radius(50%);
+        border-top: solid transparent 20px;
+    }
+    
 
-
-
-.theme:nth-of-type(1) {
-    left:0vw;
-}
-.theme:nth-of-type(2) {
-    left:20vw;
-}
-.theme:nth-of-type(3) {
-    left:40vw;
-}
-.theme:nth-of-type(4) {
-    left:60vw;
-}
-.theme:nth-of-type(5) {
-    left:80vw;
 }
 
 input[name=theme] {
@@ -67,21 +116,24 @@ input[name=theme] {
     display:none;
 }
 
-label.theme-3 {
-    background: $theme-3-bg;
+label{
+    &.theme-3 {
+        background: $theme-3-bg;
+    }
+    &.theme-1 {
+        background: $theme-1-bg;
+    }
+    &.theme-2  {
+        background: $theme-2-bg;
+    }
+    &.theme-4 {
+        background: $theme-4-bg;
+    }
+    &.theme-5 {
+        background: $theme-5-bg;
+    }   
 }
-label.theme-1 {
-    background: $theme-1-bg;
-}
-label.theme-2  {
-    background: $theme-2-bg;
-}
-label.theme-4 {
-    background: $theme-4-bg;
-}
-label.theme-5 {
-    background: $theme-5-bg;
-} 
+
 
 
 
