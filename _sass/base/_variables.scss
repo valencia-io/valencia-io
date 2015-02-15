@@ -16,26 +16,47 @@ $base-spacing: $base-line-height * 1em;
 $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
-// Colors
-$blue: #477dca;
+// Palete
+
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #f1f1f1;
+
 $pink:#ec008c;
 $green:#00F3A5;
+$red:#E8373E ;
 $red-soft :#FF6347;
 
 $blue-soft:#5592CE;
+$blue: #477dca;
+$blue-deep:#440394;
+$gray-semidark:#333340;
+
 $yellow:#FFD810;
 $yellow-darken:#ffc000;
 
-$blue-deep:#440394;
 $gray-brown:#413123;
-$gray-semidark:#333340;
 $paper:#f1f4f1;
 
-//bg colors
+//themes
+$theme-1-bg: $blue-soft;
+$theme-1-color: $green;
 
+$theme-2-bg: $red;
+$theme-2-color: black;
+
+$theme-3-bg: $blue-deep;
+$theme-3-color: $pink;
+
+$theme-4-bg: $yellow-darken;
+$theme-4-color: white;
+
+$theme-5-bg: $gray-semidark;
+$theme-5-color: $yellow;
+
+
+
+//bg colors
 $body-bg-color: $paper ;
 $bg-color: $body-bg-color;
 $summary-bg-color: $blue;

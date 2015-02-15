@@ -12,16 +12,6 @@
     height:100%;
     position:absolute; top:0; bottom:0; right:0; left:0;   
     transition: all $transition-out ease-out;
-
-/*     background: rgba(221,221,221,1);
-    background: -moz-linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(249,249,249,1) 82%, rgba(255,255,255,1) 100%);
-    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(221,221,221,1)), color-stop(82%, rgba(249,249,249,1)), color-stop(100%, rgba(255,255,255,1)));
-    background: -webkit-linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(249,249,249,1) 82%, rgba(255,255,255,1) 100%);
-    background: -o-linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(249,249,249,1) 82%, rgba(255,255,255,1) 100%);
-    background: -ms-linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(249,249,249,1) 82%, rgba(255,255,255,1) 100%);
-    background: linear-gradient(45deg, rgba(221,221,221,1) 0%, rgba(249,249,249,1) 82%, rgba(255,255,255,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#dddddd', endColorstr='#ffffff', GradientType=1 ); */
-    
     
 }
 
@@ -77,20 +67,20 @@ input[name=theme] {
     display:none;
 }
 
-label.theme-pink {
-    background:$pink;
+label.theme-3 {
+    background: $theme-3-bg;
 }
-label.theme-green {
-    background:$green;
+label.theme-1 {
+    background: $theme-1-bg;
 }
-label.theme-red-soft  {
-    background:$red-soft ;
+label.theme-2  {
+    background: $theme-2-bg;
 }
-label.theme-blue-soft {
-    background:$blue-soft;
+label.theme-4 {
+    background: $theme-4-bg;
 }
-label.theme-yellow {
-    background:$yellow;
+label.theme-5 {
+    background: $theme-5-bg;
 } 
 
 
@@ -112,40 +102,40 @@ label.theme-yellow {
 *  THEMES
 **/
 
-input[name=theme]:checked:not(#theme-bw) ~ .logo .headline {
+input[name=theme]:checked:not(#theme-0) ~ .logo .headline {
     color:white;
 }
-input[name=theme]:hover:not(#theme-bw) ~ .logo .headline {
+input[name=theme]:hover:not(#theme-0) ~ .logo .headline {
     color:white;
 }
 
-/* pink */
-input#theme-pink:checked ~  .logo path {
-    fill:$pink;
+/* theme3 */
+input#theme-3:checked ~  .logo path {
+    fill: $theme-3-color;
 } 
-label.theme-pink:hover ~ .logo path {
-    fill:$pink!important;
+label.theme-3:hover ~ .logo path {
+    fill: $theme-3-color!important;
 }
-input#theme-pink:checked ~ .logo circle {
-    stroke:$pink;
+input#theme-3:checked ~ .logo circle {
+    stroke: $theme-3-color;
 }
-label.theme-pink:hover ~ .logo circle {
-    stroke:$pink!important;
+label.theme-3:hover ~ .logo circle {
+    stroke:$theme-3-color!important;
 }
-input#theme-pink:checked ~ #background{
-    background:$blue-deep;
+input#theme-3:checked ~ #background {
+    background:$theme-3-bg;
 } 
-label.theme-pink:hover ~ #background {
-    background:$blue-deep!important;
+label.theme-3:hover ~ #background {
+    background:$theme-3-bg!important;
 }
 
-input#theme-pink:checked ~ .logo .hl1{
+input#theme-3:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
 } 
 
-input#theme-pink:checked ~ .logo .hl2{
+input#theme-3:checked ~ .logo .hl2{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 
@@ -154,131 +144,131 @@ input#theme-pink:checked ~ .logo .hl2{
 
 
 
-/* red-soft */
-input#theme-red-soft:checked ~ .logo path{
-    fill:white;
+/* theme2 */
+input#theme-2:checked ~ .logo path{
+    fill:$theme-2-color;
 }
-label.theme-red-soft:hover ~ .logo path {
-    fill:white!important;
+label.theme-2:hover ~ .logo path {
+    fill:$theme-2-color!important;
 }
-input#theme-red-soft:checked ~ .logo circle {
-    stroke:white;
+input#theme-2:checked ~ .logo circle {
+    stroke:$theme-2-color;
 } 
-label.theme-red-soft:hover ~ .logo circle {
-    stroke:white!important;
+label.theme-2:hover ~ .logo circle {
+    stroke:$theme-2-color!important;
 }
-input#theme-red-soft:checked ~ #background {
-    background:$red-soft ;
+input#theme-2:checked ~ #background {
+    background:$theme-2-bg;
 }
-label.theme-red-soft:hover ~ #background {
-    background:$red-soft !important;
+label.theme-2:hover ~ #background {
+    background:$theme-2-bg!important;
 }
 
-input#theme-red-soft:checked ~ .logo .hl1{
+input#theme-2:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
 } 
 
-input#theme-red-soft:checked ~ .logo .hl3{
+input#theme-2:checked ~ .logo .hl3{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 
 } 
 
-/* green */
-input#theme-green:checked ~ .logo path{
-    fill:$green;
+/* theme1 */
+input#theme-1:checked ~ .logo path{
+    fill:$theme-1-color;
 }
-label.theme-green:hover ~ .logo path {
-    fill:$green!important;
+label.theme-1:hover ~ .logo path {
+    fill:$theme-1-color!important;
 }
-input#theme-green:checked ~ .logo  circle{
-    stroke:$green;
+input#theme-1:checked ~ .logo  circle{
+    stroke:$theme-1-color;
 }
-label.theme-green:hover ~ .logo  circle {
-    stroke:$green!important;
+label.theme-1:hover ~ .logo  circle {
+    stroke:$theme-1-color!important;
 }
-input#theme-green:checked ~ #background {
-    background:$gray-brown;
+input#theme-1:checked ~ #background {
+    background:$theme-1-bg;
 }
-label.theme-green:hover ~ #background {
-    background:$gray-brown!important;
+label.theme-1:hover ~ #background {
+    background:$theme-1-bg!important;
 }
 
-input#theme-green:checked ~ .logo .hl1{
+input#theme-1:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
 } 
 
-input#theme-green:checked ~ .logo .hl4{
+input#theme-1:checked ~ .logo .hl4{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 
 }
 
-/* blue-soft*/
-input#theme-blue-soft:checked ~ .logo path {
-    fill:white;
+/* theme4*/
+input#theme-4:checked ~ .logo path {
+    fill:$theme-4-color;
 } 
-label.theme-blue-soft:hover ~ .logo path {
-    fill:white!important;
+label.theme-4:hover ~ .logo path {
+    fill:$theme-4-color!important;
 }
-input#theme-blue-soft:checked ~ .logo  circle{
-    stroke:white;
+input#theme-4:checked ~ .logo  circle{
+    stroke:$theme-4-color;
 }
-label.theme-blue-soft:hover ~ .logo  circle {
-    stroke:white!important;
+label.theme-4:hover ~ .logo  circle {
+    stroke:$theme-4-color!important;
 }
-input#theme-blue-soft:checked ~ #background {
-    background:$blue-soft;
+input#theme-4:checked ~ #background {
+    background:$theme-4-bg;
 }
-label.theme-blue-soft:hover ~ #background {
-    background:$blue-soft!important;
+label.theme-4:hover ~ #background {
+    background:$theme-4-bg!important;
 }
 
 
-input#theme-blue-soft:checked ~ .logo .hl1{
+input#theme-4:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
 } 
 
-input#theme-blue-soft:checked ~ .logo .hl5{
+input#theme-4:checked ~ .logo .hl5{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 
 }
 
 
-/* yellow */
-input#theme-yellow:checked ~ .logo path{
-    fill:$yellow;
+/* $theme-5 */
+input#theme-5:checked ~ .logo path{
+    fill:$theme-5-color;
 }
-label.theme-yellow:hover ~ .logo path {
-    fill:$yellow!important;
+label.theme-5:hover ~ .logo path {
+    fill:$theme-5-color!important;
 }
-input#theme-yellow:checked ~ .logo  circle{
-    stroke:$yellow;
+input#theme-5:checked ~ .logo  circle{
+    stroke:$theme-5-color;
 }
-label.theme-yellow:hover ~ .logo  circle {
-    stroke:$yellow!important;
+label.theme-5:hover ~ .logo  circle {
+    stroke:$theme-5-color!important;
 }
-input#theme-yellow:checked ~ #background {
-    background:$gray-semidark;
+input#theme-5:checked ~ #background {
+    background:$theme-5-bg;
 }
-label.theme-yellow:hover ~ #background {
-    background:$gray-semidark!important;
+label.theme-5:hover ~ #background {
+    background:$theme-5-bg!important;
 }
 
-input#theme-yellow:checked ~ .logo .hl1{
+input#theme-5:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0; 
 
 } 
 
-input#theme-yellow:checked ~ .logo .hl6{
+input#theme-5:checked ~ .logo .hl6{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 }
