@@ -18,3 +18,34 @@ footer {
 
 }
 
+/*
+*  Made by
+**/
+
+.madeby { 
+    position:absolute;
+    bottom:1%;
+    left:50%;
+    @include transform(translateX(-50%));    
+    fill:white;
+    opacity:.9;
+    display:inline-block;
+    color:white;
+    font-size:20px;
+    font-family: $brandonGrotesque;
+    line-height:0.8;
+}
+.madeby:before { 
+    content:"Made with ";
+    vertical-align:middle;
+    position:relative;
+    top:-7px;
+}
+.madeby:after { 
+    content:" in Valencia city";
+    vertical-align:middle;
+    position:relative;
+    top:-7px;
+
+}
+

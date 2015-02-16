@@ -28,7 +28,7 @@
 
 }
 #s3 {
-    background: $blue;
+    background:  $blue-gray ;
     color:white;
 }
 
@@ -39,7 +39,11 @@
 
 
 #s5 {
-    background: #88ABC2;
+    background:$blue-turquoise;
+    color:white;
+}
+#s6 {
+    background:$turquoise;
     color:white;
 }
 
@@ -108,42 +112,12 @@ section:not(#s1) {
     }
     svg {
         position: absolute;
+        bottom: 20%;
         bottom: 20vh;
         width: 100px;
-        fill: rgba(0, 0, 0,.1);
+        fill: rgba(255,255,255,0.7);
         right: 20%;
     }
-}
-
-/*
-*  Made by
-**/
-
-.madeby { 
-    position:absolute;
-    top:1%;
-    left:50%;
-    transform: translateX(-50%);    
-    fill:white;
-    opacity:.06;
-    display:inline-block;
-    color:white;
-    font-size:20px;
-    font-family: 'BrandonGrotesque-Regular', $helvetica;
-    line-height:0.8;
-}
-.madeby:before { 
-    content:"Made with ";
-    vertical-align:middle;
-    position:relative;
-    top:-7px;
-}
-.madeby:after { 
-    content:" in Valencia city";
-    vertical-align:middle;
-    position:relative;
-    top:-7px;
-
 }
 
 
