@@ -85,7 +85,7 @@ label.theme:hover{
 $rainbow-vertical-growth: 15px;
 
 .rainbow, .rainbow *, .rainbow:hover , .rainbow:before {
-    transition:all 0s linear !important;
+    transition:all 0.1s linear !important;
 }
 
 .theme.rainbow {
@@ -100,17 +100,15 @@ $rainbow-vertical-growth: 15px;
     border-radius:0;
     position: fixed;
 
-    border-top: solid transparent $rainbow-vertical-growth;
-
-
-
+    
     padding: 5px;
 
 
     z-index:-1;
     opacity: .6;
     bottom: 0;
-    &::before {
+    border-top: solid $footer-bg-color $rainbow-vertical-growth;
+/*     &::before {
         content:'';
         position:absolute;
         width:100%;
@@ -119,11 +117,11 @@ $rainbow-vertical-growth: 15px;
         top:-$rainbow-vertical-growth;
         left:0;
         
-    } 
+    }  */
     &:hover{
         border-radius:0;
         @include border-top-radius(50%);
-        border-top: solid transparent $rainbow-vertical-growth*1.5;
+        border-top: solid transparent $rainbow-vertical-growth;
         
         &::before {
             transition:all 0s linear;

@@ -33,8 +33,16 @@
 }
 
 #s4 {
-    background: $bg-color;
+    background: $blue-soft;
+    color:white;
 }
+
+
+#s5 {
+    background: #88ABC2;
+    color:white;
+}
+
 
 section:not(#s1) {
     $transition-height: 150px;
@@ -52,7 +60,7 @@ section:not(#s1) {
         height: $transition-height;
         height: $transition-height-2;
 
-        @include transform(translateY(-$transition-height));
+        @include transform(translateY(-$transition-height/1.01));
         @include transform(translateY(-$transition-height-2/1.01));
         border-radius:0 90% 0 0;
         background: inherit;
@@ -61,7 +69,8 @@ section:not(#s1) {
     article {
         @include outer-container();
         @include pad(20px);
-        margin-top:-7vh;
+        margin-top:-$transition-height;
+        margin-top:-$transition-height-2;
     }
 }
 
@@ -70,7 +79,7 @@ section:not(#s1) {
 **/
 .goDown {
     border:none;
-    color:black;
+    color:invert($bg-color);
     height:100px;
 
     @include animation(appear .1s infinite linear);

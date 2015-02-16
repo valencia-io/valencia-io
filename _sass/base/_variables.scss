@@ -27,6 +27,8 @@ $pink:#ec008c;
 $green:#00F3A5;
 $green-dark:#1693A5 ;
 
+$turquoise:#1E8C93;
+
 $red:#E8373E ;
 $red-soft :#FF6347;
 
@@ -58,7 +60,7 @@ $theme-4-primary:$yellow-darken;
 $theme-4-bg: $yellow-darken;
 $theme-4-color: white;
 
-$theme-5-primary: darken($blue-soft,50%);
+$theme-5-primary: $blue;
 $theme-5-bg: $gray-semidark;
 $theme-5-color: $yellow;
 
@@ -71,7 +73,7 @@ $bg-color: $body-bg-color;
 $summary-bg-color: $blue;
 $sumary-content-bg-color:$paper;
 
-$footer-bg-color: $blue;
+$footer-bg-color: $dark-gray;
 $footer-text-color: white;
 
 $logo-color: white;
