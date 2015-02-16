@@ -1,10 +1,11 @@
 
 
 #s1 {
-    height:110vh;
+    height:110%;
+    height:105vh;
     text-align:center;
     position:relative;
-    
+
     z-index:0;
     @include linear-gradient(50deg, #ddd 20%, white 100%);
     .logo {
@@ -13,7 +14,7 @@
         top: 40%;
         @include transform(translateY(-50%));    
         display: inline-block;
-        padding:50px 10px;
+        padding:50px 30px;
     }
 }
 
@@ -21,7 +22,6 @@
     background: $dark-gray;
     color: $light-gray;
 
-    margin-top:-10vh;
     z-index:1;
     @include outer-container(100%);
 
@@ -37,17 +37,24 @@
 }
 
 section:not(#s1) {
+    $transition-height: 150px;
+    $transition-height-2: 15vh;
     transition:all 3s linear;
-    min-height:90vh;
-    padding-bottom:70px;
+    /*     min-height:90vh; */
+    padding-bottom:$transition-height *1.5;
+    padding-bottom:$transition-height-2 *1.5;
     &::before {
-        z-index:0;
+        z-index:1;
         content:"";
-        z-index:10;
-        width: 100vw;
-        height: 20vh;
-        @include transform(scaleX(1.5) translateY(-7vh));
-        border-radius:0 100% 0 0;
+
+        /*         width: 100vw; */
+        width: 100%;
+        height: $transition-height;
+        height: $transition-height-2;
+
+        @include transform(translateY(-$transition-height));
+        @include transform(translateY(-$transition-height-2/1.01));
+        border-radius:0 90% 0 0;
         background: inherit;
         display: block;
     }

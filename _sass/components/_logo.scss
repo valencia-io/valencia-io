@@ -4,8 +4,10 @@
 .home .logo , .logo-inner {
 
     font-family: $brandonGrotesque;
+    
     svg {
-        width:95%;
+        width:100%;
+        
         max-height:196.5px;
         max-width:306px;  
     }
@@ -22,7 +24,8 @@
         transition: all $transition-in ease-out;
     }
     path {
-        fill: $logo-color; 
+        fill: $logo-color;
+
         stroke:none;
         transition: all $transition-out*2 ease-out;
     } 
