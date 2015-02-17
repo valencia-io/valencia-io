@@ -1,4 +1,8 @@
-$brandonGrotesque:'BrandonGrotesque-Regular', 'Montserrat', $helvetica;
+#mfPreviewBar {
+    display:none;
+}
+$brandonGrotesque: 'Brandon Grotesque', 'Montserrat', $helvetica;
+
 // Typography
 $base-font-family: 'Libre Baskerville' , $georgia;
 $heading-font-family: $brandonGrotesque;

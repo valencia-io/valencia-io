@@ -46,14 +46,12 @@ body a:active, body a:focus, body a:hover {
         @include pad(0px);
     }
     li {
-/*         font-family: $brandonGrotesque;      */
-        
-        list-style-position: outside;
-        
-        
+        padding-bottom: 0.6em;
+        font-size: 0.8em;
+        list-style-position: inside;
+        border-bottom: solid 3px rgba(255,255,255,0.1);
     } 
 }
-
 
 #s5 {
     background:$blue-turquoise;
@@ -142,6 +140,13 @@ section:not(#s1) {
 
 span.price {
     font-size:1.6em;
+}
+.single-subscription {
+    opacity:0.8;
+    font-size:0.7em;
+    &::before {
+        content: "* ";
+    }
 }
 @mixin grid-item-columns($columns) {
     width: (100% / 12) * $columns;
@@ -243,7 +248,7 @@ span.price {
             opacity:0.9;
             background-color:white;
             outline-color: black;;
-            
+
         }
     }
 
