@@ -24,7 +24,7 @@ footer {
 
 .madeby { 
     position:absolute;
-    bottom:1%;
+    top:1%;
     left:50%;
     @include transform(translateX(-50%));    
     fill:white;

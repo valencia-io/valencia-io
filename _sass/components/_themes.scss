@@ -368,8 +368,10 @@ input#theme-5:checked ~ .logo .hl6{
 .summary input#theme-5:checked ~ .content {
     background:#333;
     color:white;
+    transition: all 2s linear;
 }
 .summary label.theme-5:hover ~ .content {
     background:#333;
     color:white;
+    transition: all 2s linear;
 }
