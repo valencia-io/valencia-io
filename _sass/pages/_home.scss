@@ -38,10 +38,10 @@ body a:active, body a:focus, body a:hover {
 #s4 {
     background: $blue-soft;
     color:white;
-    
+
 }
 
-#s4 , #s5 {
+#s4 {
     ol, ul{
         @include pad(0px);
     }
@@ -49,7 +49,7 @@ body a:active, body a:focus, body a:hover {
         font-family: $brandonGrotesque;
         font-size: 2.4em;
         color: rgba(255,255,255,0.3);
-        list-style-position:inside;
+        list-style-position: outside;
         h1 {
             font-size:1em;
             font-weight: 800;
@@ -187,7 +187,7 @@ span.price {
     position: relative;
 
     .grid-item {
-        @include transition (all 1.6s ease-in-out);
+        @include transition (all 1s ease-in-out);
         background: transparent;
         border-bottom: $grid-item-border;
         border-right: $grid-item-border;
@@ -206,7 +206,7 @@ span.price {
         &:focus,
         &:hover {
             background: transparentize($grid-item-color, 0.85);
-            @include transition (all 3.6s ease-in-out);
+            @include transition (all 2.5s ease-in-out);
             color:inherit;
             border-radius: 15px;
         }
@@ -214,9 +214,9 @@ span.price {
 
     .grid-item img {
         display: block;
-        height: 2.5em;
+        height: 3em;
         margin-bottom: 1.2em;
-        opacity: 0.2;
+        opacity: 0.4;
     }
 
     .grid-item h1 {
@@ -228,20 +228,30 @@ span.price {
     .grid-item p {
         color: inherit;
         font-size: 0.9em;
-
-        @include media($medium-screen) {
-            max-width: 100%;
-        }
+        min-height: 50px;
+        @include media($large-screen) {
+            min-height: 85px;
+        }          
     }
 
     .grid-item-big {
         @include media($large-screen) {
             @include grid-item-columns($grid-item-big-columns);
         }
-        p {
-            @include media($medium-screen) {
-                max-width: 40%;
-            }  
+
+    }
+    button{
+        background-color:darken(white,10%);
+        color:$turquoise;
+        font-family:$brandonGrotesque;
+        letter-spacing:1px;
+        font-weight:900;
+        &:hover,
+        &:focus {
+            opacity:0.9;
+            background-color:white;
+            outline-color: black;;
+            
         }
     }
 
