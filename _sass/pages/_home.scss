@@ -4,7 +4,8 @@ body a:active, body a:focus, body a:hover {
 }
 
 #s1 {
-    height:110%;
+    min-height: 600px;
+    height:42em;  //everything
     height:105vh;
     text-align:center;
     position:relative;
@@ -121,7 +122,7 @@ section:not(#s1) {
         }
         to {
             opacity:0;
-            @include transform(translateY(25vh));
+            @include transform(translateY(7em));
         }
 
 
@@ -144,6 +145,7 @@ span.price {
 .single-subscription {
     opacity:0.8;
     font-size:0.7em;
+    margin-top:1em;
     &::before {
         content: "* ";
     }
