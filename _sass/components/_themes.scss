@@ -364,3 +364,12 @@ input#theme-5:checked ~ .logo .hl6{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 }
+// theme 5 = summary nigth mode :D
+.summary input#theme-5:checked ~ .content {
+    background:#333;
+    color:white;
+}
+.summary label.theme-5:hover ~ .content {
+    background:#333;
+    color:white;
+}
