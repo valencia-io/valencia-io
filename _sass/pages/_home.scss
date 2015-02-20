@@ -226,7 +226,7 @@ span.price {
 
     .grid-item p {
         color: inherit;
-        font-size: 0.9em;
+        font-size: 0.75em;
         min-height: 50px;
         @include media($large-screen) {
             min-height: 85px;
