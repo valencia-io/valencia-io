@@ -6,7 +6,7 @@
     position:relative;
 }
 #background {
-    z-index:-1;
+    z-index:1;
     text-align:center;
     background:inherit;
     height:100%;
@@ -29,7 +29,7 @@ label.theme {
 
     float:left;
     border-radius:33%;
-    z-index:1;
+    z-index:2;
     position:absolute;
     bottom:15%;
     opacity:.5;
