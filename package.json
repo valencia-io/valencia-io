@@ -1,0 +1,34 @@
+{
+  "name": "valencia-io",
+  "version": "2.0.0",
+  "description": "digital nomads community where creativity meets code",
+  "main": "index.html",
+  "dependencies": {
+    "bower": "^1.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valencia-io/valencia-io.git"
+  },
+  "keywords": [
+    "digital",
+    "nomads",
+    "community",
+    "code",
+    "design",
+    "dev",
+    "des",
+    "freelance",
+    "spain"
+  ],
+  "author": "jupegarnica.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valencia-io/valencia-io/issues"
+  },
+  "homepage": "https://github.com/valencia-io/valencia-io#readme"
+}

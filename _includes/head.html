@@ -5,27 +5,15 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-    
+
      {% include open-graph.html %}
-    
+
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="icon" type="image/png" href="{{ "/img/favicon.png " | prepend: site.baseurl | prepend: site.url }}">
     <link rel="stylesheet" href="{{  '/css/' | append: include.layout | append: '.css'  | prepend: site.baseurl }}">
 
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ "/feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+
     
-<!--     <script src="{{ "/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js " | prepend: site.baseurl | prepend: site.url }}"></script> -->
-    <script type="text/javascript">
-    (function() {
-        var path = '//easy.myfonts.net/v2/js?sid=187188(font-family=Brandon+Grotesque+Regular)&sid=187189(font-family=Brandon+Grotesque+Light)&sid=187193(font-family=Brandon+Grotesque+Thin)&sid=187194(font-family=Brandon+Grotesque+Medium)&key=4K18Wh9NCO',
-            protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
-            trial = document.createElement('script');
-        trial.type = 'text/javascript';
-        trial.async = true;
-        trial.src = protocol + path;
-        var head = document.getElementsByTagName("head")[0];
-        head.appendChild(trial);
-    })();
-</script>
 </head>

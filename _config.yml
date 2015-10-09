@@ -18,30 +18,31 @@ safe: false
 
 # Build settings
 markdown: kramdown
-sass:
+#markdown: redcarpet
+2sass:
   style: compressed
 
 # plugins
 gems:
   - jekyll-sitemap
-  
+
 # links
 collections:
   links:
     output: true
     permalink: /link/:path/
-    
-# defaults    
+
+# defaults
 defaults:
   -
     scope:
-      path: "" 
+      path: ""
     values:
       layout: "default"
       author: "jupegarnica"
   -
     scope:
-      path: "link" 
+      path: "link"
     values:
       layout: "link"
       customLayout: "link"
@@ -65,5 +66,5 @@ owner:
     analytics:
     verify:
     ad-client:
-    ad-slot: 
+    ad-slot:
   bing-verify:
