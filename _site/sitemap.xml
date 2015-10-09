@@ -2,38 +2,21 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://valencia.io/welcome-to-jekyll/</loc>
-    <lastmod>2014-11-30T00:02:55+00:00</lastmod>
+    <lastmod>2014-11-30T01:02:55+01:00</lastmod>
   </url>
   <url>
     <loc>http://valencia.io/404.html</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://valencia.io/about/</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
   </url>
   <url>
     <loc>http://valencia.io/summary/</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
   </url>
   <url>
     <loc>http://valencia.io/</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://valencia.io/index.oldJekyll.html</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
   </url>
   <url>
     <loc>http://valencia.io/link/1/</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
   </url>
   <url>
     <loc>http://valencia.io/link/2/</loc>
-    <lastmod>2015-08-06T15:47:24+00:00</lastmod>
-  </url>
-  <url>
-    <loc>http://valencia.io/index.h5bp.html</loc>
-    <lastmod>2015-02-09T18:47:56+00:00</lastmod>
   </url>
 </urlset>

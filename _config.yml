@@ -2,9 +2,7 @@
 title: valencia.io
 email: jupegarnica@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Where creativity meets code
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://valencia.io" # the base hostname & protocol for your site
@@ -15,33 +13,37 @@ twitter_username: vlc_io
 github_username:  Valencia-io
 
 safe: false
-
+exclude:
+  - node_modules/
+  - Gemfile*
+  - package.json
 # Build settings
 markdown: kramdown
-sass:
+#markdown: redcarpet
+2sass:
   style: compressed
 
 # plugins
 gems:
   - jekyll-sitemap
-  
+
 # links
 collections:
   links:
     output: true
     permalink: /link/:path/
-    
-# defaults    
+
+# defaults
 defaults:
   -
     scope:
-      path: "" 
+      path: ""
     values:
       layout: "default"
       author: "jupegarnica"
   -
     scope:
-      path: "link" 
+      path: "link"
     values:
       layout: "link"
       customLayout: "link"
@@ -65,5 +67,5 @@ owner:
     analytics:
     verify:
     ad-client:
-    ad-slot: 
+    ad-slot:
   bing-verify:

@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>valencia.io</title>
-    <description>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+    <description>Where creativity meets code
 </description>
     <link>http://valencia.io/</link>
     <atom:link href="http://valencia.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 06 Aug 2015 15:47:24 +0000</pubDate>
-    <lastBuildDate>Thu, 06 Aug 2015 15:47:24 +0000</lastBuildDate>
-    <generator>Jekyll v2.5.3</generator>
+    <pubDate>Fri, 09 Oct 2015 22:49:53 +0200</pubDate>
+    <lastBuildDate>Fri, 09 Oct 2015 22:49:53 +0200</lastBuildDate>
+    <generator>Jekyll v2.4.0</generator>
     
       <item>
         <title>Welcome to Jekyll!</title>
@@ -27,7 +27,7 @@
 &lt;p&gt;Check out the &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://github.com/jekyll/jekyll-help&quot;&gt;Jekyll’s dedicated Help repository&lt;/a&gt;.&lt;/p&gt;
 
 </description>
-        <pubDate>Sun, 30 Nov 2014 00:02:55 +0000</pubDate>
+        <pubDate>Sun, 30 Nov 2014 01:02:55 +0100</pubDate>
         <link>http://valencia.io/welcome-to-jekyll/</link>
         <guid isPermaLink="true">http://valencia.io/welcome-to-jekyll/</guid>
         

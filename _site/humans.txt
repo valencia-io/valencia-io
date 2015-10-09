@@ -2,7 +2,8 @@
 # The humans responsible & technology colophon
 
 # TEAM
-
+    @jupegarnica
+    jupegarnica.com
     <name> -- <role> -- <twitter>
 
 # THANKS
@@ -11,5 +12,4 @@
 
 # TECHNOLOGY COLOPHON
 
-    HTML5, CSS3
-    jQuery, Modernizr
+    jekyll , NodeJS, bourbon-sass
