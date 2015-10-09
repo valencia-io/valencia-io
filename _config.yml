@@ -15,7 +15,8 @@ github_username:  Valencia-io
 safe: false
 exclude:
   - node_modules/
-  - Gemfile*
+  - Gemfile
+  - Gemfile.lock
   - package.json
 # Build settings
 markdown: kramdown
