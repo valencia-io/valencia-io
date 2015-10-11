@@ -1,112 +1,104 @@
 /*
 *  BACKGROUND
 **/
-
 .summary {
-    position:relative;
+  position: relative;
 }
 #background {
-    z-index:0;
-    text-align:center;
-    background:inherit;
-    height:100%;
-    position:absolute; top:0; bottom:0; right:0; left:0;
-    transition: all $transition-out ease-out;
+  z-index: 0;
+  text-align: center;
+  background: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transition: all $transition-out ease-out;
 }
 
 /*
 *  THEME SWITCHER
 **/
-
 label.theme {
-    width:7.5vw;
-    height:7.5vw;
-    max-width:35px;
-    max-height:35px;
-    min-width:17px;
-    min-height:17px;
-    margin:15px 6.25vw;
-
-    float:left;
-    border-radius:33%;
-    z-index:2;
-    position:absolute;
-    bottom:15%;
-    opacity:.5;
-    cursor: help;  //img chula (emoticono boca abierta?)
-
-    transition:all 1s linear;
+  width: 7.5vw;
+  height: 7.5vw;
+  max-width: 35px;
+  max-height: 35px;
+  min-width: 17px;
+  min-height: 17px;
+  margin: 15px 6.25vw;
+  float: left;
+  border-radius: 33%;
+  z-index: 2;
+  position: absolute;
+  bottom: 15%;
+  opacity: 0.5;
+  cursor: help; //img chula (emoticono boca abierta?)
+  transition: all 1s linear;
 }
-label.theme:hover{
-    border-radius:100%;
-
+label.theme:hover {
+  border-radius: 100%;
 }
-
-:not(.rainbow).theme{
-    &:nth-of-type(1) {
-        left:0vw;
-    }
-    &:nth-of-type(2) {
-        left:20vw;
-    }
-    &:nth-of-type(3) {
-        left:40vw;
-    }
-    &:nth-of-type(4) {
-        left:60vw;
-    }
-    &:nth-of-type(5) {
-        left:80vw;
-    }
+ :not(.rainbow).theme {
+  &:nth-of-type(1) {
+    left: 0;
+  }
+  &:nth-of-type(2) {
+    left: 20vw;
+  }
+  &:nth-of-type(3) {
+    left: 40vw;
+  }
+  &:nth-of-type(4) {
+    left: 60vw;
+  }
+  &:nth-of-type(5) {
+    left: 80vw;
+  }
 }
-
-.rainbow.theme{
-    &:nth-of-type(1) {
-        left:0vw;
-    }
-    &:nth-of-type(2) {
-        left:20vw;
-    }
-    &:nth-of-type(3) {
-        left:40vw;
-    }
-    &:nth-of-type(4) {
-        left:60vw;
-    }
-    &:nth-of-type(5) {
-        left:80vw;
-    }
+.rainbow.theme {
+  &:nth-of-type(1) {
+    left: 0;
+  }
+  &:nth-of-type(2) {
+    left: 20vw;
+  }
+  &:nth-of-type(3) {
+    left: 40vw;
+  }
+  &:nth-of-type(4) {
+    left: 60vw;
+  }
+  &:nth-of-type(5) {
+    left: 80vw;
+  }
 }
-
 
 // rainbow style
 $rainbow-vertical-growth: 15px;
-
-.rainbow, .rainbow *, .rainbow:hover , .rainbow:before {
-    transition:all 0.1s linear !important;
+.rainbow,
+.rainbow *,
+.rainbow:hover,
+.rainbow:before {
+  transition: all 0.1s linear !important;
 }
-
 .theme.rainbow {
-    width:20%;
-    height:10px;
-    max-width:20%;
-    max-height:35px;
-    min-width:0;
-    min-height:0;
-    margin:0;
-
-    border-radius:0;
-    position: fixed;
-
-
-    padding: 5px;
-
-
-    z-index:-1;
-    opacity: .6;
-    bottom: 0;
-    border-top: solid $footer-bg-color $rainbow-vertical-growth;
-/*     &::before {
+  width: 20%;
+  height: 10px;
+  max-width: 20%;
+  max-height: 35px;
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  border-radius: 0;
+  position: fixed;
+  padding: 5px;
+  z-index: -1;
+  opacity: 0.6;
+  bottom: 0;
+  border-top: solid $footer-bg-color $rainbow-vertical-growth;
+  /*     &::before {
         content:'';
         position:absolute;
         width:100%;
@@ -116,262 +108,297 @@ $rainbow-vertical-growth: 15px;
         left:0;
 
     }  */
-    &:hover{
-        border-radius:0;
-        @include border-top-radius(50%);
-        border-top: solid transparent $rainbow-vertical-growth;
-
-        &::before {
-            transition:all 0s linear;
-            background:transparent;
-
-        }
+  &:hover {
+    border-radius: 0;
+    @include border-top-radius(50%);
+    border-top: solid transparent $rainbow-vertical-growth;
+    &::before {
+      transition: all 0s linear;
+      background: transparent;
     }
-
-
+  }
 }
-
 input[name=theme] {
-    /*  opacity:0.2;*/
-    display:none;
+  /*  opacity:0.2;*/
+  display: none;
+}
+label {
+  &.theme-1 {
+    background: $theme-1-primary;
+  }
+  &.theme-2 {
+    background: $theme-2-primary;
+  }
+  &.theme-3 {
+    background: $theme-3-primary;
+  }
+  &.theme-4 {
+    background: $theme-4-primary;
+  }
+  &.theme-5 {
+    background: $theme-5-primary;
+  }
+}
+label.rainbow {
+  &.theme-1 {
+    @include linear-gradient(90deg, $theme-1-primary 20%, $theme-2-primary 100%);
+  }
+  &.theme-2 {
+    @include linear-gradient(90deg, $theme-2-primary 60%, $theme-3-primary 100%);
+  }
+  &.theme-3 {
+    @include linear-gradient(90deg, $theme-3-primary 60%, $theme-4-primary 100%);
+  }
+  &.theme-4 {
+    @include linear-gradient(90deg, $theme-4-primary 60%, $theme-5-primary 100%);
+  }
+  &.theme-5 {
+    @include linear-gradient(90deg, $theme-5-primary 70%, $theme-1-primary 100%);
+  }
 }
 
-label{
+//
+// /*
+// *  THEMES
+// **/
 
-    &.theme-1 {
-        background: $theme-1-primary;
-    }
-    &.theme-2  {
-        background: $theme-2-primary;
-    }
-    &.theme-3 {
-        background: $theme-3-primary;
-    }
-    &.theme-4 {
-        background: $theme-4-primary;
-    }
-    &.theme-5 {
-        background: $theme-5-primary;
-    }
+// DEFAUL STATE
+
+.headline > div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 0;
+  transition: all $text-transition ease-in-out;
+  @include transform(translateX(-100vw));
 }
-label.rainbow{
-
-    &.theme-1 {
-        @include linear-gradient(90deg, $theme-1-primary 20%, $theme-2-primary 100%);
-    }
-    &.theme-2  {
-        @include linear-gradient(90deg, $theme-2-primary 60%, $theme-3-primary 100%);
-    }
-    &.theme-3 {
-        @include linear-gradient(90deg, $theme-3-primary 60%, $theme-4-primary 100%);
-    }
-    &.theme-4 {
-        @include linear-gradient(90deg, $theme-4-primary 60%, $theme-5-primary 100%);
-    }
-    &.theme-5 {
-        @include linear-gradient(90deg, $theme-5-primary 70%, $theme-1-primary 100%);
-    }
+.logo .hl-0 {
+  @include transform(translateX(0vw));
+  opacity: 1;
 }
-
-
-
-
-
-.logo .hl2, .logo .hl3, .logo .hl4, .logo .hl5, .logo .hl6{
-    position:absolute;
-    top:0;
-    right:0;
-    opacity:0;
-    transition: all $text-transition ease-in-out;
-    @include transform(translateX(-100vw));
+input[name=theme]:checked:not(#theme-0) ~ .logo .hl-0 {
+  @include transform(translateX(-100vw));
+  opacity: 0;
 }
-.logo .hl1 {
-    transition: all $text-transition ease-in-out;
-    @include transform(translateX(0vw));
-}
-
-/*
-*  THEMES
-**/
 
 input[name=theme]:checked:not(#theme-0) ~ .logo .headline {
-    color:white;
+  color: white;
 }
 input[name=theme]:hover:not(#theme-0) ~ .logo .headline {
-    color:white;
+  color: white;
 }
 
-/* theme3 */
-input#theme-3:checked ~  .logo path {
+/* theme-0  default  */
+input#theme-0:checked{
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-0-color;
+  }
+  & ~ #background {
+    background: $theme-0-bg;
+  }
+  & ~ .logo .hl-0 {
+    @include transform(translateX(0vw));
+    opacity: 1;
+  }
+}
+label.theme-0:hover {
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-0-color !important;
+  }
+  & ~ #background {
+    background: $theme-0-bg !important;
+  }
+  & ~ .logo .hl-0 {
+    @include transform(translateX(0vw));
+    opacity: 1 !important;
+  }
+}
+label.theme:hover:not(.theme-0){
+  & ~ .logo .hl-0 {
+    @include transform(translateX(-100vw));
+    opacity: 0 !important;
+  }
+}
+
+/* theme-1  */
+input#theme-1:checked{
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-1-color;
+  }
+  & ~ #background {
+    background: $theme-1-bg;
+  }
+  & ~ .logo .hl-1 {
+    @include transform(translateX(0vw));
+    opacity: 1;
+  }
+}
+label.theme-1:hover {
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-1-color !important;
+  }
+  & ~ #background {
+    background: $theme-1-bg !important;
+  }
+  & ~ .logo .hl-1 {
+    @include transform(translateX(0vw));
+    opacity: 1 !important;
+  }
+}
+label.theme:hover:not(.theme-1){
+  & ~ .logo .hl-1 {
+    @include transform(translateX(-100vw));
+    opacity: 0 !important;
+  }
+}
+
+/* theme-2  */
+input#theme-2:checked{
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-2-color;
+  }
+  & ~ #background {
+    background: $theme-2-bg;
+  }
+  & ~ .logo .hl-2 {
+    @include transform(translateX(0vw));
+    opacity: 1;
+  }
+}
+label.theme-2:hover {
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-2-color !important;
+  }
+  & ~ #background {
+    background: $theme-2-bg !important;
+  }
+  & ~ .logo .hl-2 {
+    @include transform(translateX(0vw));
+    opacity: 1 !important;
+  }
+}
+label.theme:hover:not(.theme-2){
+  & ~ .logo .hl-2 {
+    @include transform(translateX(-100vw));
+    opacity: 0 !important;
+  }
+}
+
+/* theme-3  */
+input#theme-3:checked{
+  & ~ .logo path,
+  & ~ .logo circle {
     fill: $theme-3-color;
-}
-label.theme-3:hover ~ .logo path {
-    fill: $theme-3-color!important;
-}
-input#theme-3:checked ~ .logo circle {
-    stroke: $theme-3-color;
-}
-label.theme-3:hover ~ .logo circle {
-    stroke:$theme-3-color!important;
-}
-input#theme-3:checked ~ #background {
-    background:$theme-3-bg;
-}
-label.theme-3:hover ~ #background {
-    background:$theme-3-bg!important;
-}
-
-input#theme-3:checked ~ .logo .hl1{
-    transition: all $text-transition ease-in-out;
-    @include transform(translateY(100vh)); opacity:0;
-
-}
-
-input#theme-3:checked ~ .logo .hl2{
-    transition: all $text-transition ease-in-out; opacity:1;
+  }
+  & ~ #background {
+    background: $theme-3-bg;
+  }
+  & ~ .logo .hl-3 {
     @include transform(translateX(0vw));
-
+    opacity: 1;
+  }
 }
-
-
-
-
-/* theme2 */
-input#theme-2:checked ~ .logo path{
-    fill:$theme-2-color;
-}
-label.theme-2:hover ~ .logo path {
-    fill:$theme-2-color!important;
-}
-input#theme-2:checked ~ .logo circle {
-    stroke:$theme-2-color;
-}
-label.theme-2:hover ~ .logo circle {
-    stroke:$theme-2-color!important;
-}
-input#theme-2:checked ~ #background {
-    background:$theme-2-bg;
-}
-label.theme-2:hover ~ #background {
-    background:$theme-2-bg!important;
-}
-
-input#theme-2:checked ~ .logo .hl1{
-    transition: all $text-transition ease-in-out;
-    @include transform(translateY(100vh)); opacity:0;
-
-}
-
-input#theme-2:checked ~ .logo .hl3{
-    transition: all $text-transition ease-in-out; opacity:1;
+label.theme-3:hover {
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-3-color !important;
+  }
+  & ~ #background {
+    background: $theme-3-bg !important;
+  }
+  & ~ .logo .hl-3 {
     @include transform(translateX(0vw));
-
+    opacity: 1 !important;
+  }
 }
-
-/* theme1 */
-input#theme-1:checked ~ .logo path{
-    fill:$theme-1-color;
+label.theme:hover:not(.theme-3){
+  & ~ .logo .hl-3 {
+    @include transform(translateX(-100vw));
+    opacity: 0 !important;
+  }
 }
-label.theme-1:hover ~ .logo path {
-    fill:$theme-1-color!important;
-}
-input#theme-1:checked ~ .logo  circle{
-    stroke:$theme-1-color;
-}
-label.theme-1:hover ~ .logo  circle {
-    stroke:$theme-1-color!important;
-}
-input#theme-1:checked ~ #background {
-    background:$theme-1-bg;
-}
-label.theme-1:hover ~ #background {
-    background:$theme-1-bg!important;
-}
-
-input#theme-1:checked ~ .logo .hl1{
-    transition: all $text-transition ease-in-out;
-    @include transform(translateY(100vh)); opacity:0;
-
-}
-
-input#theme-1:checked ~ .logo .hl4{
-    transition: all $text-transition ease-in-out; opacity:1;
+/* theme-4  */
+input#theme-4:checked{
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-4-color;
+  }
+  & ~ #background {
+    background: $theme-4-bg;
+  }
+  & ~ .logo .hl-4 {
     @include transform(translateX(0vw));
-
+    opacity: 1;
+  }
 }
-
-/* theme4*/
-input#theme-4:checked ~ .logo path {
-    fill:$theme-4-color;
-}
-label.theme-4:hover ~ .logo path {
-    fill:$theme-4-color!important;
-}
-input#theme-4:checked ~ .logo  circle{
-    stroke:$theme-4-color;
-}
-label.theme-4:hover ~ .logo  circle {
-    stroke:$theme-4-color!important;
-}
-input#theme-4:checked ~ #background {
-    background:$theme-4-bg;
-}
-label.theme-4:hover ~ #background {
-    background:$theme-4-bg!important;
-}
-
-
-input#theme-4:checked ~ .logo .hl1{
-    transition: all $text-transition ease-in-out;
-    @include transform(translateY(100vh)); opacity:0;
-
-}
-
-input#theme-4:checked ~ .logo .hl5{
-    transition: all $text-transition ease-in-out; opacity:1;
+label.theme-4:hover {
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-4-color !important;
+  }
+  & ~ #background {
+    background: $theme-4-bg !important;
+  }
+  & ~ .logo .hl-4 {
     @include transform(translateX(0vw));
-
+    opacity: 1 !important;
+  }
+}
+label.theme:hover:not(.theme-4){
+  & ~ .logo .hl-4 {
+    @include transform(translateX(-100vw));
+    opacity: 0 !important;
+  }
 }
 
-
-/* $theme-5 */
-input#theme-5:checked ~ .logo path{
-    fill:$theme-5-color;
-}
-label.theme-5:hover ~ .logo path {
-    fill:$theme-5-color!important;
-}
-input#theme-5:checked ~ .logo  circle{
-    stroke:$theme-5-color;
-}
-label.theme-5:hover ~ .logo  circle {
-    stroke:$theme-5-color!important;
-}
-input#theme-5:checked ~ #background {
-    background:$theme-5-bg;
-}
-label.theme-5:hover ~ #background {
-    background:$theme-5-bg!important;
-}
-
-input#theme-5:checked ~ .logo .hl1{
-    transition: all $text-transition ease-in-out;
-    @include transform(translateY(100vh)); opacity:0;
-
-}
-
-input#theme-5:checked ~ .logo .hl6{
-    transition: all $text-transition ease-in-out; opacity:1;
+/* theme-5  */
+input#theme-5:checked{
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-5-color;
+  }
+  & ~ #background {
+    background: $theme-5-bg;
+  }
+  & ~ .logo .hl-5 {
     @include transform(translateX(0vw));
+    opacity: 1;
+  }
 }
+label.theme-5:hover {
+  & ~ .logo path,
+  & ~ .logo circle {
+    fill: $theme-5-color !important;
+  }
+  & ~ #background {
+    background: $theme-5-bg !important;
+  }
+  & ~ .logo .hl-5 {
+    @include transform(translateX(0vw));
+    opacity: 1 !important;
+  }
+}
+label.theme:hover:not(.theme-5){
+  & ~ .logo .hl-5 {
+    @include transform(translateX(-100vw));
+    opacity: 0 !important;
+  }
+}
+
 // theme 5 = summary nigth mode :D
 .summary input#theme-5:checked ~ .content {
-    background:#333;
-    color:white;
-    transition: all 2s linear;
+  background: #333;
+  color: white;
+  transition: all 2s linear;
 }
 .summary label.theme-5:hover ~ .content {
-    background:#333;
-    color:white;
-    transition: all 2s linear;
+  background: #333;
+  color: white;
+  transition: all 2s linear;
 }
