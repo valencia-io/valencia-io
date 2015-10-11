@@ -638,27 +638,34 @@ html, body {
 /*
 *   LOGOTYPE
 **/
+.home .logo,
 .logo-inner {
   font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   position: relative; }
+  .home .logo svg,
   .logo-inner svg {
     width: 100%;
     max-height: 196.5px;
     max-width: 306px; }
+  .home .logo circle,
   .logo-inner circle {
     fill: none;
     stroke: white;
     transition: all 1s ease-out; }
+  .home .logo circle:hover,
   .logo-inner circle:hover {
     stroke: black !important;
     transition: all 0.15s ease-out; }
+  .home .logo path,
   .logo-inner path {
     fill: white;
     stroke: none;
     transition: all 2s ease-out; }
+  .home .logo path:hover,
   .logo-inner path:hover {
     fill: black !important;
     transition: all 0.15s ease-out; }
+  .home .logo .headline,
   .logo-inner .headline {
     position: relative;
     font-weight: 900;

@@ -10,6 +10,9 @@ $le-border-radius: 4px;
 
     background-color:$summary-bg-color;
     z-index:1;
+    .logo {
+      
+    }
     .content {
         @include outer-container();
         @include pad(30px 20px);
@@ -57,10 +60,10 @@ $le-border-radius: 4px;
         @include media(max-width $medium-screen) {
             .letter-efect {
                 height: $le-height - 2px;
-                top: $le-margin-top + 3px;                
+                top: $le-margin-top + 3px;
                 &::before {
                     height: $le-height - 2px;
-                    top: $le-margin-top + 3px;                
+                    top: $le-margin-top + 3px;
                 }
                 &::after {
                     height: $le-height - 2px;
@@ -70,6 +73,6 @@ $le-border-radius: 4px;
         }
 
     }
-    
+
 
 }
