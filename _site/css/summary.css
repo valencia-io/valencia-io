@@ -672,14 +672,14 @@ header .logo-inner {
   .home .logo circle, .logo-inner circle {
     fill: none;
     stroke: white;
-    transition: all 2s ease-out; }
+    transition: all 1s ease-out; }
   .home .logo circle:hover, .logo-inner circle:hover {
     stroke: black !important;
     transition: all 0.15s ease-out; }
   .home .logo path, .logo-inner path {
     fill: white;
     stroke: none;
-    transition: all 4s ease-out; }
+    transition: all 2s ease-out; }
   .home .logo path:hover, .logo-inner path:hover {
     fill: black !important;
     transition: all 0.15s ease-out; }
@@ -690,7 +690,7 @@ header .logo-inner {
     font-size: 16px;
     color: #444;
     line-height: 1.2;
-    transition: all 2s ease-out;
+    transition: all 1s ease-out;
     -webkit-animation: init 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     -moz-animation: init 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     animation: init 2s cubic-bezier(0.25, 0.46, 0.45, 0.94); }
@@ -733,7 +733,7 @@ header .logo-inner {
   bottom: 0;
   right: 0;
   left: 0;
-  transition: all 2s ease-out; }
+  transition: all 1s ease-out; }
 
 /*
 *  THEME SWITCHER
@@ -806,7 +806,7 @@ label.theme:hover {
           background:linear-gradient(to top, transparent 0%, $footer-bg-color 100%);
           top:-$rainbow-vertical-growth;
           left:0;
-          
+  
       }  */ }
   .theme.rainbow:hover {
     border-radius: 0;
@@ -858,7 +858,7 @@ label.rainbow.theme-5 {
   top: 0;
   right: 0;
   opacity: 0;
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateX(-100vw);
   -moz-transform: translateX(-100vw);
   -ms-transform: translateX(-100vw);
@@ -866,7 +866,7 @@ label.rainbow.theme-5 {
   transform: translateX(-100vw); }
 
 .logo .hl1 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateX(0vw);
   -moz-transform: translateX(0vw);
   -ms-transform: translateX(0vw);
@@ -902,7 +902,7 @@ label.theme-3:hover ~ #background {
   background: #440394 !important; }
 
 input#theme-3:checked ~ .logo .hl1 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateY(100vh);
   -moz-transform: translateY(100vh);
   -ms-transform: translateY(100vh);
@@ -911,7 +911,7 @@ input#theme-3:checked ~ .logo .hl1 {
   opacity: 0; }
 
 input#theme-3:checked ~ .logo .hl2 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   opacity: 1;
   -webkit-transform: translateX(0vw);
   -moz-transform: translateX(0vw);
@@ -939,7 +939,7 @@ label.theme-2:hover ~ #background {
   background: #E8373E !important; }
 
 input#theme-2:checked ~ .logo .hl1 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateY(100vh);
   -moz-transform: translateY(100vh);
   -ms-transform: translateY(100vh);
@@ -948,7 +948,7 @@ input#theme-2:checked ~ .logo .hl1 {
   opacity: 0; }
 
 input#theme-2:checked ~ .logo .hl3 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   opacity: 1;
   -webkit-transform: translateX(0vw);
   -moz-transform: translateX(0vw);
@@ -976,7 +976,7 @@ label.theme-1:hover ~ #background {
   background: #1693A5 !important; }
 
 input#theme-1:checked ~ .logo .hl1 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateY(100vh);
   -moz-transform: translateY(100vh);
   -ms-transform: translateY(100vh);
@@ -985,7 +985,7 @@ input#theme-1:checked ~ .logo .hl1 {
   opacity: 0; }
 
 input#theme-1:checked ~ .logo .hl4 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   opacity: 1;
   -webkit-transform: translateX(0vw);
   -moz-transform: translateX(0vw);
@@ -1013,7 +1013,7 @@ label.theme-4:hover ~ #background {
   background: #ffc000 !important; }
 
 input#theme-4:checked ~ .logo .hl1 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateY(100vh);
   -moz-transform: translateY(100vh);
   -ms-transform: translateY(100vh);
@@ -1022,7 +1022,7 @@ input#theme-4:checked ~ .logo .hl1 {
   opacity: 0; }
 
 input#theme-4:checked ~ .logo .hl5 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   opacity: 1;
   -webkit-transform: translateX(0vw);
   -moz-transform: translateX(0vw);
@@ -1050,7 +1050,7 @@ label.theme-5:hover ~ #background {
   background: #333340 !important; }
 
 input#theme-5:checked ~ .logo .hl1 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   -webkit-transform: translateY(100vh);
   -moz-transform: translateY(100vh);
   -ms-transform: translateY(100vh);
@@ -1059,7 +1059,7 @@ input#theme-5:checked ~ .logo .hl1 {
   opacity: 0; }
 
 input#theme-5:checked ~ .logo .hl6 {
-  transition: all 1.2s ease-in-out;
+  transition: all 1s ease-in-out;
   opacity: 1;
   -webkit-transform: translateX(0vw);
   -moz-transform: translateX(0vw);

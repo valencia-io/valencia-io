@@ -8,7 +8,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "bundle exec jekyll serve --watch"
   },
   "repository": {
     "type": "git",
@@ -30,5 +31,5 @@
   "bugs": {
     "url": "https://github.com/valencia-io/valencia-io/issues"
   },
-  "homepage": "https://github.com/valencia-io/valencia-io#readme"
+  "homepage": "http://valencia.io"
 }

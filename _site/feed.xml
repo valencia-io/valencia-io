@@ -6,10 +6,10 @@
 </description>
     <link>http://valencia.io/</link>
     <atom:link href="http://valencia.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 09 Oct 2015 22:49:53 +0200</pubDate>
-    <lastBuildDate>Fri, 09 Oct 2015 22:49:53 +0200</lastBuildDate>
+    <pubDate>Sun, 11 Oct 2015 17:39:26 +0200</pubDate>
+    <lastBuildDate>Sun, 11 Oct 2015 17:39:26 +0200</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
-
+    
       <item>
         <title>Welcome to Jekyll!</title>
         <description>&lt;p&gt;You’ll find this post in your &lt;code&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
@@ -30,9 +30,9 @@
         <pubDate>Sun, 30 Nov 2014 01:02:55 +0100</pubDate>
         <link>http://valencia.io/welcome-to-jekyll/</link>
         <guid isPermaLink="true">http://valencia.io/welcome-to-jekyll/</guid>
-
-
+        
+        
       </item>
-
+    
   </channel>
 </rss>

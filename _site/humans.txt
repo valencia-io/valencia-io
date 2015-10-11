@@ -2,13 +2,9 @@
 # The humans responsible & technology colophon
 
 # TEAM
-    @jupegarnica
-    jupegarnica.com
-    <name> -- <role> -- <twitter>
+    jupegarnica.com -- @jupegarnica
 
 # THANKS
-
-    <name>
 
 # TECHNOLOGY COLOPHON
 

@@ -10,13 +10,13 @@
     text-align:center;
     background:inherit;
     height:100%;
-    position:absolute; top:0; bottom:0; right:0; left:0;   
+    position:absolute; top:0; bottom:0; right:0; left:0;
     transition: all $transition-out ease-out;
 }
 
 /*
 *  THEME SWITCHER
-**/ 
+**/
 
 label.theme {
     width:7.5vw;
@@ -38,7 +38,7 @@ label.theme {
     transition:all 1s linear;
 }
 label.theme:hover{
-    border-radius:100%;  
+    border-radius:100%;
 
 }
 
@@ -98,7 +98,7 @@ $rainbow-vertical-growth: 15px;
     border-radius:0;
     position: fixed;
 
-    
+
     padding: 5px;
 
 
@@ -114,18 +114,18 @@ $rainbow-vertical-growth: 15px;
         background:linear-gradient(to top, transparent 0%, $footer-bg-color 100%);
         top:-$rainbow-vertical-growth;
         left:0;
-        
+
     }  */
     &:hover{
         border-radius:0;
         @include border-top-radius(50%);
         border-top: solid transparent $rainbow-vertical-growth;
-        
+
         &::before {
             transition:all 0s linear;
             background:transparent;
-            
-        } 
+
+        }
     }
 
 
@@ -152,7 +152,7 @@ label{
     }
     &.theme-5 {
         background: $theme-5-primary;
-    }   
+    }
 }
 label.rainbow{
 
@@ -170,7 +170,7 @@ label.rainbow{
     }
     &.theme-5 {
         @include linear-gradient(90deg, $theme-5-primary 70%, $theme-1-primary 100%);
-    }   
+    }
 }
 
 
@@ -184,7 +184,7 @@ label.rainbow{
     opacity:0;
     transition: all $text-transition ease-in-out;
     @include transform(translateX(-100vw));
-} 
+}
 .logo .hl1 {
     transition: all $text-transition ease-in-out;
     @include transform(translateX(0vw));
@@ -204,7 +204,7 @@ input[name=theme]:hover:not(#theme-0) ~ .logo .headline {
 /* theme3 */
 input#theme-3:checked ~  .logo path {
     fill: $theme-3-color;
-} 
+}
 label.theme-3:hover ~ .logo path {
     fill: $theme-3-color!important;
 }
@@ -216,7 +216,7 @@ label.theme-3:hover ~ .logo circle {
 }
 input#theme-3:checked ~ #background {
     background:$theme-3-bg;
-} 
+}
 label.theme-3:hover ~ #background {
     background:$theme-3-bg!important;
 }
@@ -225,13 +225,13 @@ input#theme-3:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
-} 
+}
 
 input#theme-3:checked ~ .logo .hl2{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 
-} 
+}
 
 
 
@@ -245,7 +245,7 @@ label.theme-2:hover ~ .logo path {
 }
 input#theme-2:checked ~ .logo circle {
     stroke:$theme-2-color;
-} 
+}
 label.theme-2:hover ~ .logo circle {
     stroke:$theme-2-color!important;
 }
@@ -260,13 +260,13 @@ input#theme-2:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
-} 
+}
 
 input#theme-2:checked ~ .logo .hl3{
     transition: all $text-transition ease-in-out; opacity:1;
     @include transform(translateX(0vw));
 
-} 
+}
 
 /* theme1 */
 input#theme-1:checked ~ .logo path{
@@ -292,7 +292,7 @@ input#theme-1:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
-} 
+}
 
 input#theme-1:checked ~ .logo .hl4{
     transition: all $text-transition ease-in-out; opacity:1;
@@ -303,7 +303,7 @@ input#theme-1:checked ~ .logo .hl4{
 /* theme4*/
 input#theme-4:checked ~ .logo path {
     fill:$theme-4-color;
-} 
+}
 label.theme-4:hover ~ .logo path {
     fill:$theme-4-color!important;
 }
@@ -325,7 +325,7 @@ input#theme-4:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
     @include transform(translateY(100vh)); opacity:0;
 
-} 
+}
 
 input#theme-4:checked ~ .logo .hl5{
     transition: all $text-transition ease-in-out; opacity:1;
@@ -356,9 +356,9 @@ label.theme-5:hover ~ #background {
 
 input#theme-5:checked ~ .logo .hl1{
     transition: all $text-transition ease-in-out;
-    @include transform(translateY(100vh)); opacity:0; 
+    @include transform(translateY(100vh)); opacity:0;
 
-} 
+}
 
 input#theme-5:checked ~ .logo .hl6{
     transition: all $text-transition ease-in-out; opacity:1;
