@@ -40,14 +40,14 @@ defaults:
     scope:
       path: ""
     values:
-      layout: "default"
+      layout: "blankpage"
       author: "jupegarnica"
   -
     scope:
       path: "project"
+      type: projects
     values:
       layout: "project"
-      customLayout: "project"
 
 # Site owner
 owner:
