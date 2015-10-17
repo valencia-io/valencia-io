@@ -8,5 +8,3 @@ technologies:
 leader: jupegarnica
 readme: https://raw.githubusercontent.com/valencia-io/valencia-io/gh-pages/README.md
 ---
-
-{% remote_include https://raw.githubusercontent.com/valencia-io/valencia-io/gh-pages/README.md %}
