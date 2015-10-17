@@ -384,7 +384,7 @@ button {
   cursor: pointer;
   display: inline-block;
   font-family: "Libre Baskerville", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 20px;
+  font-size: 17px;
   font-weight: 600;
   line-height: 1;
   padding: 0.75em 1em;
@@ -413,7 +413,7 @@ label,
 select {
   display: block;
   font-family: "Libre Baskerville", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 20px; }
+  font-size: 17px; }
 
 label {
   font-weight: 600;
@@ -432,7 +432,7 @@ textarea {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   font-family: "Libre Baskerville", "Georgia", "Cambria", "Times New Roman", "Times", serif;
-  font-size: 20px;
+  font-size: 17px;
   margin-bottom: 0.75em;
   padding: 0.5em;
   transition: border-color;
@@ -481,10 +481,10 @@ body {
   color: #333;
   font-family: "Libre Baskerville", "Georgia", "Cambria", "Times New Roman", "Times", serif;
   line-height: 1.5;
-  font-size: 17px; }
+  font-size: 14.45px; }
   @media screen and (min-width: 640px) {
     body {
-      font-size: 20px; } }
+      font-size: 17px; } }
 
 a {
   color: #477dca;
@@ -523,12 +523,12 @@ body {
   body a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 3px solid #FFD810; }
+    border-bottom: 2px solid #FFD810; }
+    body a:visited {
+      border-bottom: 2px solid rgba(117, 3, 173, 0.4); }
     body a:active, body a:focus, body a:hover {
       color: #477dca;
       border-bottom: 3px solid #477dca; }
-    body a:visited {
-      border-bottom: 3px solid rgba(117, 3, 173, 0.4); }
   body::after {
     clear: both;
     content: "";
