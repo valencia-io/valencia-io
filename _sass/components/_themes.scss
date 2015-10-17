@@ -1,7 +1,7 @@
 /*
 *  BACKGROUND
 **/
-.summary {
+.blankpage {
   position: relative;
 }
 #background {
@@ -391,13 +391,13 @@ label.theme:hover:not(.theme-5){
   }
 }
 
-// theme 5 = summary nigth mode :D
-.summary input#theme-5:checked ~ .content {
+// theme 5 = blankpage nigth mode :D
+.blankpage input#theme-5:checked ~ .content {
   background: #333;
   color: white;
   transition: all 2s linear;
 }
-.summary label.theme-5:hover ~ .content {
+.blankpage label.theme-5:hover ~ .content {
   background: #333;
   color: white;
   transition: all 2s linear;

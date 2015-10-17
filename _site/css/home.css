@@ -22,7 +22,7 @@ body {
    ========================================================================== */
 /**
  * Correct `block` display not defined for any HTML5 element in IE 8/9.
- * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * Correct `block` display not defined for `details` or `blankpage` in IE 10/11
  * and Firefox.
  * Correct `block` display not defined for `main` in IE 11.
  */
@@ -38,7 +38,7 @@ main,
 menu,
 nav,
 section,
-summary {
+blankpage {
   display: block; }
 
 /**
@@ -366,9 +366,6 @@ html {
   -moz-box-sizing: inherit;
   box-sizing: inherit; }
 
-#mfPreviewBar {
-  display: none; }
-
 /*$bg-color: invert( $logo-color);*/
 /*$logo-headline-color: invert( darken($bg-color,20%)) ;*/
 /*$logo-headline-color: invert( lighten($bg-color,20%)) ;*/
@@ -617,10 +614,10 @@ html, body {
   height: 100%;
   background: #f1f4f1; }
 
-.summary, footer {
+.blankpage, footer {
   padding: 10px; }
   @media screen and (min-width: 640px) {
-    .summary, footer {
+    .blankpage, footer {
       padding: 20px; } }
 
 .footer-content {
@@ -703,7 +700,7 @@ html, body {
 /*
 *  BACKGROUND
 **/
-.summary {
+.blankpage {
   position: relative; }
 
 #background {
@@ -1071,12 +1068,12 @@ label.theme:hover:not(.theme-5) ~ .logo .hl-5 {
   transform: translateX(-100vw);
   opacity: 0 !important; }
 
-.summary input#theme-5:checked ~ .content {
+.blankpage input#theme-5:checked ~ .content {
   background: #333;
   color: white;
   transition: all 2s linear; }
 
-.summary label.theme-5:hover ~ .content {
+.blankpage label.theme-5:hover ~ .content {
   background: #333;
   color: white;
   transition: all 2s linear; }
@@ -1135,7 +1132,9 @@ footer {
   position: relative;
   top: -7px; }
 
-body a:active, body a:focus, body a:hover {
+body a:active,
+body a:focus,
+body a:hover {
   color: #ddd;
   border-bottom: 3px solid #ddd; }
 
@@ -1181,7 +1180,8 @@ body a:active, body a:focus, body a:hover {
   background: #5592CE;
   color: white; }
 
-#s4 ol, #s4 ul {
+#s4 ol,
+#s4 ul {
   padding: 0px; }
 #s4 li {
   padding-bottom: 0.6em;
@@ -1222,7 +1222,7 @@ section:not(#s1) {
     border-radius: 0 90% 0 0;
     background: inherit;
     display: block;
-    box-shadow: 0px -20px rgba(251, 251, 251, 0.02); }
+    box-shadow: 0 -20px rgba(251, 251, 251, 0.02); }
   section:not(#s1) article {
     max-width: 960px;
     margin-left: auto;
@@ -1235,7 +1235,7 @@ section:not(#s1) {
       content: "";
       display: table; }
 
-/* 
+/*
 * Go Down
 **/
 .goDown {

@@ -1,13 +1,17 @@
 ---
 layout: default
 ---
-
-{% include head.html layout="summary" %}
+{% if page.layout == 'default'%}
+  {% assign css = 'blankpage' %}
+{% else %}
+  {% assign css = page.layout %}
+{% endif %}
+{% include head.html pagecss=css %}
 
 <body>
     {% include browser-outdated.html %}
 
-    <div class="summary wrapper">
+    <div class="blankpage wrapper">
 
         {% include theme-switcher.html style="rainbow" %}
 
@@ -23,4 +27,3 @@ layout: default
     {% include footer.html %}
 </body>
 {% include scripts.html %}
-

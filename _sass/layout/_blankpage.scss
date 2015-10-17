@@ -1,14 +1,17 @@
-// letter effect
+@import "main";
+@import "components/header";
+@import "components/logo";
+@import "components/themes";
+@import "components/footer";
+
 $le-height:6px;
 $le-width: 97%;
 $le-margin-top: -1 *(5px + $le-height);
 $le-margin-left: (100% - $le-width - 0.7%) ;
 $le-border-radius: 4px;
 
-.summary {
-
-
-    background-color:$summary-bg-color;
+.blankpage {
+    background-color:$blankpage-bg-color;
     z-index:1;
     min-height: 100vh;
     .logo {
