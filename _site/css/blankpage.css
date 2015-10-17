@@ -643,6 +643,7 @@ header {
 header .logo-inner {
   max-height: inherit;
   max-width: 140px;
+  height: inherit;
   margin: auto; }
   @media screen and (min-width: 640px) {
     header .logo-inner {
@@ -650,7 +651,8 @@ header .logo-inner {
       max-width: 200px; } }
   header .logo-inner svg {
     max-height: inherit;
-    max-width: inherit; }
+    max-width: inherit;
+    height: inherit; }
   header .logo-inner path {
     fill: white; }
   header .logo-inner circle {
