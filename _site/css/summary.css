@@ -1162,7 +1162,8 @@ footer {
 
 .summary {
   background-color: #477dca;
-  z-index: 1; }
+  z-index: 1;
+  min-height: 100vh; }
   .summary .content {
     max-width: 960px;
     margin-left: auto;

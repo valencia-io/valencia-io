@@ -30,9 +30,9 @@ gems:
 
 # links
 collections:
-  links:
+  projects:
     output: true
-    permalink: /link/:path/
+    permalink: /project/:path/
 
 # defaults
 defaults:
@@ -44,10 +44,10 @@ defaults:
       author: "jupegarnica"
   -
     scope:
-      path: "link"
+      path: "project"
     values:
-      layout: "link"
-      customLayout: "link"
+      layout: "project"
+      customLayout: "project"
 
 # Site owner
 owner:

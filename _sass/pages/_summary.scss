@@ -10,8 +10,9 @@ $le-border-radius: 4px;
 
     background-color:$summary-bg-color;
     z-index:1;
+    min-height: 100vh;
     .logo {
-      
+
     }
     .content {
         @include outer-container();
