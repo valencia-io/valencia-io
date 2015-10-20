@@ -36,6 +36,32 @@ layout: home
     </article>
 </section>
 <section id="s3">
+  <article class="">
+    <p class="type">Projects</p>
+      {% for project in site.projects %}
+      <div class="project-wrapper ">
+        <h3>{{ project.title }}</h3>
+        <p class="description">
+          {{project.description}}
+        </p>
+        <em class="status {{{{project.status}}}}">
+          Status: {{project.status}}
+        </em>
+        <ul>
+          <h4>Goals:</h4>
+          {% for goal in project.goals %}
+            <li>{{goal}}</li>
+          {% endfor %}
+        </ul>
+        <ul class="technology">
+          <h4>Technoligies:</h4>
+          {% for tech in project.technology %}
+            <li>{{tech}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endfor %}
+  </article>
 </section>
 <!-- <section id="s3" class="">
     <article class="">
