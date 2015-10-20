@@ -48,6 +48,17 @@ defaults:
       type: projects
     values:
       layout: "project"
+      title: write here the name of the project
+      repo: https://project.com/repository.git
+      description: 72 characters description
+      goals:
+        - main goal
+        - secundary goal
+      technology:
+        - HTML
+        - CSS
+      leader: who is the product owner?
+      status: open
 
 # Site owner
 owner:

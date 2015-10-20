@@ -1,13 +1,15 @@
 ---
-title: Valencia.io
-repo: https://github.com/valencia-io/valencia-io
-description:
+title: Flexbox layout
+repo:
+description: Use flexbox layout as simple as possible
 goals:
   - use css classes for managing your layouts.
   - cross browser
 technology:
-  - jekyll
   - sass
+  - bower
+  - css
+  - HTML
 leader: jupegarnica
 status: open
 ---
