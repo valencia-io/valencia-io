@@ -23,13 +23,13 @@
 label.theme {
   width: 7.5vw;
   height: 7.5vw;
-  max-width: 35px;
-  max-height: 35px;
-  min-width: 17px;
-  min-height: 17px;
+  max-width: 45px;
+  max-height: 45px;
+  min-width: 20px;
+  min-height: 20px;
   margin: 15px 6.25vw;
   float: left;
-  border-radius: 33%;
+  border-radius: 50%;
   z-index: 2;
   position: absolute;
   bottom: 15%;
@@ -38,7 +38,7 @@ label.theme {
   transition: all 1s linear;
 }
 label.theme:hover {
-  border-radius: 100%;
+  border-radius: 5%;
 }
  :not(.rainbow).theme {
   &:nth-of-type(1) {
