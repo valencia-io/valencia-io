@@ -11,10 +11,16 @@
     <loc>http://valencia.io/</loc>
   </url>
   <url>
-    <loc>http://valencia.io/project/flexbox_layout/</loc>
+    <loc>http://valencia.io/project/flexbox-layout/</loc>
   </url>
   <url>
-    <loc>http://valencia.io/project/typography_sass_boilerplate/</loc>
+    <loc>http://valencia.io/project/project-blank-template/</loc>
+  </url>
+  <url>
+    <loc>http://valencia.io/project/queue.website/</loc>
+  </url>
+  <url>
+    <loc>http://valencia.io/project/typography-boilerplate/</loc>
   </url>
   <url>
     <loc>http://valencia.io/project/valencia.io_website/</loc>

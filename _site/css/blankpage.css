@@ -4,6 +4,7 @@
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
  */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
 html {
   font-family: sans-serif;
   /* 1 */
@@ -547,7 +548,7 @@ body {
   body h1 {
     font-family: "Brandon Grotesque", "Montserrat", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 2.1em;
-    font-weight: 600;
+    font-weight: 700;
     margin-bottom: 0.6em;
     line-height: 1.2; }
     @media screen and (min-width: 640px) {

@@ -16,6 +16,18 @@ layout: blankpage
     <p>
       {{page.description}}
     </p>
+    <h3>Goals</h3>
+    <ul>
+      {% for goal in page.goals%}
+      <li>{{goal}}</li>
+      {% endfor%}
+    </ul>
+    <h3>Technology</h3>
+    <ul>
+      {% for tech in page.technology%}
+      <li>{{tech}}</li>
+      {% endfor%}
+    </ul>
   </div>
   <div class="more-projects">
     <h3>More projects</h3>

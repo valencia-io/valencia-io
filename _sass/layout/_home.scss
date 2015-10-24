@@ -31,8 +31,9 @@ body a:hover {
   z-index: 1;
   @include outer-container(100%);
 }
+$s3-bg: $blue-soft;
 #s3 {
-  background: $blue-gray;
+  background: $s3-bg;
   color: white;
 }
 #s4 {
@@ -144,12 +145,8 @@ span.price {
 .grid-items-lines {
 
   ///////////////////////////////////////////////////////////////////////////////////
-  $base-background-color: transparent !default;
-  $dark-gray: #333 !default;
-  $light-gray: #ddd !default;
-  $medium-screen: em(640) !default;
-  $large-screen: em(860) !default;
-  $base-font-color: $dark-gray !default;
+  $grid-items-base-background-color: $s3-bg;
+  $grid-items-base-font-color: white;
   p {
     line-height: 1.5em;
   }
@@ -158,18 +155,18 @@ span.price {
   }
 
   //////////////////////////////////////////////////////////////////////////////////
-  $grid-items-background: $base-background-color;
-  $grid-item-background: $base-background-color;
-  $grid-item-border: 1px solid transparent;
+  $grid-items-background: $grid-items-base-background-color;
+  $grid-item-background: $grid-items-base-background-color;
+  $grid-item-border: 1px solid transparentize($grid-items-base-font-color, 0.6);
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
-  $grid-item-color: $base-font-color;
+  $grid-item-color: $grid-items-base-font-color;
   $grid-item-height: 14em;
   @include clearfix;
   position: relative;
   .grid-item {
     @include transition (all 1s ease-in-out);
-    background: transparent;
+    background: transparentize(white,0.95);
     border-bottom: $grid-item-border;
     border-right: $grid-item-border;
     cursor: pointer;
@@ -179,34 +176,53 @@ span.price {
     outline: none;
     padding: 1.3em;
     width: 100%;
+
     @include media($large-screen) {
       @include grid-item-columns($grid-item-columns);
     }
     &:focus,
     &:hover {
-      background: transparentize($grid-item-color, 0.85);
-      @include transition (all 2.5s ease-in-out);
+      background: transparentize($grid-item-color, 0.9);
+      @include transition (all .5s ease-in-out);
       color: inherit;
-      border-radius: 15px;
     }
-  }
-  .grid-item img {
-    display: block;
-    height: 3em;
-    margin-bottom: 1.2em;
-    opacity: 0.4;
-  }
-  .grid-item h1 {
-    color: inherit;
-    font-size: 1.4em;
-    margin-bottom: 0.4em;
-  }
-  .grid-item p {
-    color: inherit;
-    font-size: 0.75em;
-    min-height: 50px;
-    @include media($large-screen) {
-      min-height: 85px;
+    &.open:focus,
+    &.open:hover {
+      background: transparentize(lime, 0.85);
+    }
+    &.closed:focus,
+    &.closed:hover {
+      background: transparentize(tomato, 0.6);
+    }
+
+    .tech-icon {
+      display: block;
+      margin-bottom: 1.2em;
+      opacity: 0.9;
+      text-align: center;
+      svg {
+        height: 4em;
+        width:50%;
+        margin: auto;
+        * {
+          fill: $grid-items-base-font-color;
+        }
+      }
+    }
+
+    h1 {
+      color: inherit;
+      font-size: 1.4em;
+      margin-bottom: 0.4em;
+      height: 2.4em;
+    }
+    p {
+      color: inherit;
+      font-size: 0.9em;
+      min-height: 50px;
+      @include media($large-screen) {
+        min-height: 85px;
+      }
     }
   }
   .grid-item-big {
@@ -214,6 +230,22 @@ span.price {
       @include grid-item-columns($grid-item-big-columns);
     }
   }
+  .bottom-cover {
+    background: $grid-items-background;
+    bottom: 0px;
+    height: 3px;
+    position: absolute;
+    width: 100%;
+  }
+
+  .right-cover {
+    background: $grid-items-background;
+    height: 100%;
+    position: absolute;
+    right: 0px;
+    width: 4px;
+  }
+
   button {
     background-color: darken(white,10%);
     color: $turquoise;

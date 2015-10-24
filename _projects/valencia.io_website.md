@@ -1,13 +1,12 @@
 ---
 title: Valencia.io
 repo: https://github.com/valencia-io/valencia-io
-description:
+description: Develop this site and create rich features for the community
 goals:
-  - use css classes for managing your layouts.
-  - cross browser
+  -
 technology:
   - jekyll
   - sass
 leader: jupegarnica
-status: open
+status: closed
 ---
