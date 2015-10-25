@@ -1,4 +1,5 @@
 #{$all-button-inputs},
+a.cta,
 button {
   @include appearance(none);
   -webkit-font-smoothing: antialiased;
@@ -8,7 +9,7 @@ button {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: $base-font-family;
+  font-family: $heading-font-family;
   font-size: $base-font-size;
   font-weight: 600;
   line-height: 1;
@@ -17,15 +18,20 @@ button {
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-
+  border-bottom: 0 !important;
   &:hover,
   &:focus {
-    background-color: darken($action-color, 15%);
+    background-color: lighten($action-color, 5%);
     color: #fff;
   }
 
   &:disabled {
     cursor: not-allowed;
     opacity: 0.5;
+  }
+  &.cta {
+    font-size: $base-font-size * 1.4;
+    letter-spacing: 0.05em;
+    text-transform:uppercase;
   }
 }

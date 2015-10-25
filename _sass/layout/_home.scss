@@ -37,19 +37,10 @@ $s3-bg: $blue-soft;
   color: white;
 }
 #s4 {
-  background: $blue-soft;
+  background: $yellow-darken;
   color: white;
-}
-#s4 {
-  ol,
-  ul {
-    @include pad(0px);
-  }
-  li {
-    padding-bottom: 0.6em;
-    font-size: 0.8em;
-    list-style-position: inside;
-    border-bottom: solid 3px rgba(255,255,255,0.1);
+  article {
+    text-align: center;
   }
 }
 #s5 {
@@ -127,18 +118,6 @@ section:not(#s1) {
   }
 }
 
-//PRICING
-span.price {
-  font-size: 1.6em;
-}
-.single-subscription {
-  opacity: 0.8;
-  font-size: 0.7em;
-  margin-top: 1em;
-  &::before {
-    content: "* ";
-  }
-}
 @mixin grid-item-columns($columns) {
   width: (100% / 12) * $columns;
 }
