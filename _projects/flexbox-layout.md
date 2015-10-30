@@ -1,6 +1,6 @@
 ---
 title: Flexibilidad
-repo:
+url:
 description: Flexbox layouts made simple
 goals:
   - use css classes for managing your layouts.

@@ -1,6 +1,6 @@
 ---
 title: Fancy name here
-repo: http://
+url: http://
 description: Short description about the project
 goals:
   - Main goal to achieve

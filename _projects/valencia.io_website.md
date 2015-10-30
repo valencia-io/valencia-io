@@ -1,6 +1,6 @@
 ---
 title: Valencia.io
-repo: https://github.com/valencia-io/valencia-io
+url: https://github.com/valencia-io/valencia-io
 description: Develop this site and create rich features for the community
 goals:
   -

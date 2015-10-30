@@ -1,6 +1,6 @@
 ---
 title: asdfasdf.js
-repo: http://jupegarnica.github.io/asdfasdf.js/
+url: http://jupegarnica.github.io/asdfasdf.js/
 description: The easiest way to not let your users lose their data while filling a form.
 goals:
   - save data form in order to not lose it if windows closes.

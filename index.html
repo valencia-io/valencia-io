@@ -40,17 +40,19 @@ layout: home
     <p class="type">Projects</p>
       <div class="grid-items-lines">
         {% for project in site.projects %}
-        <a href="{{ project.url }}" class="grid-item {{project.status}}">
-          <div class="tech-icon">
-            {% assign icon = 'devicons/' | append: project.technology[0] | append: '.svg' %}
-            {% include {{icon}} %}
-          </div>
-          <h1>{{ project.title }}</h1>
-          <p>{{project.description}}</p>
-          <em class="status {{project.status}}">
-            Status: {{project.status}}
-          </em>
-        </a>
+          {% if project.title != 'Fancy name here' %}
+          <a href="{{ project.url }}" class="grid-item {{project.status}}">
+            <div class="tech-icon">
+              {% assign icon = 'devicons/' | append: project.technology[0] | append: '.svg' %}
+              {% include {{icon}} %}
+            </div>
+            <h1>{{ project.title }}</h1>
+            <p>{{project.description}}</p>
+            <em class="status {{project.status}}">
+              Status: {{project.status}}
+            </em>
+          </a>
+          {% endif %}
         {% endfor %}
         <div class="right-cover"></div>
         <div class="bottom-cover"></div>
