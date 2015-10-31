@@ -1,6 +1,6 @@
 ---
 layout: blankpage
-title:  "Welcome to Jekyll!"
+name:  "Welcome to Jekyll!"
 date:   2014-11-30 00:02:55
 
 ---

@@ -1,7 +1,7 @@
 ---
-title: Fancy name here
+name: Fancy name here
 url: http://
-description: Short description about the project
+title: Short description about the project
 goals:
   - Main goal to achieve
   - Secondary goal

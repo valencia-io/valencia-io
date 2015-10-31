@@ -1,7 +1,7 @@
 ---
-title: Flexibilidad
+name: Flexibilidad
 url:
-description: Flexbox layouts made simple
+title: Flexbox layouts made simple
 goals:
   - use css classes for managing your layouts.
   - cross browser

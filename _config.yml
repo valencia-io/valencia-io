@@ -1,8 +1,7 @@
 # Site settings
-title: valencia.io
+name: valencia.io
 email: jupegarnica@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Where creativity meets code
+description: Where creativity meets code
 
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://valencia.io" # the base hostname & protocol for your site
@@ -48,9 +47,10 @@ defaults:
       type: projects
     values:
       layout: "project"
-      title: write here the name of the project
+      name: write here the name of the project
       url: https://project.com/repository.git
-      description: 72 characters description
+      title: 72 characters short description
+      description: Long description of the project
       goals:
         - main goal
         - secundary goal
