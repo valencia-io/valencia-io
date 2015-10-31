@@ -1,8 +1,8 @@
 ---
 name: ng-link-stylesheet
-url: http://
+url: https://github.com/valencia-io/ng-link-stylesheet
 title: A much better alternative for inline styles.
-description: Embed a stylesheet only when a component is shown in angular JS in order to not use a main.css with all the styles even when they are not
+description: Embed a stylesheet only when a component is shown in angularJS in order to not use a main.css with all the styles even when they are not in use
 goals:
   - An angularJS directive to embed a stylesheet only when it is shown.
 technology:
