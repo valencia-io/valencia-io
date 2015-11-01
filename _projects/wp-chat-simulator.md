@@ -13,3 +13,5 @@ technology:
 leader: jupegarnica
 status: open
 ---
+### Example
+![Wordpress Chat Simulator](/img/wp-chat-simulator.gif)

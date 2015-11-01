@@ -5,10 +5,11 @@ layout: blankpage
   <div class="project-header">
     <h1>{{page.name}}</h1>
     <h2>{{page.title}}</h2>
-    {% assign member = site.data.members[page.leader] %}
+    
+    <!-- {% assign member = site.data.members[page.leader] %}
     <p>By: <a rel="member" href="{{ member.twitter }}">
         {{ member.name }}
-    </a></p>
+    </a></p> -->
 
   </div>
   <div class="project-body">
@@ -29,6 +30,8 @@ layout: blankpage
       {% endfor%}
     </ul>
   </div>
+  {{ content }}
+  <hr>
   <div class="more-projects">
     <h3>More projects</h3>
     <ul>
@@ -39,5 +42,5 @@ layout: blankpage
       {% endfor %}
     </ul>
   </div>
-  {{ content }}
+
 </div>
