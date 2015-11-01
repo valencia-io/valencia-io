@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>valencia.io</title>
-    <description>Where creativity meets code
-</description>
+    <title></title>
+    <description>Where creativity meets code</description>
     <link>http://valencia.io/</link>
     <atom:link href="http://valencia.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 31 Oct 2015 18:24:18 +0100</pubDate>
-    <lastBuildDate>Sat, 31 Oct 2015 18:24:18 +0100</lastBuildDate>
+    <pubDate>Sun, 01 Nov 2015 22:37:54 +0100</pubDate>
+    <lastBuildDate>Sun, 01 Nov 2015 22:37:54 +0100</lastBuildDate>
     <generator>Jekyll v2.4.0</generator>
     
       <item>

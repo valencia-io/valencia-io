@@ -14,6 +14,9 @@
     <loc>http://valencia.io/project/asdfasdf.js/</loc>
   </url>
   <url>
+    <loc>http://valencia.io/project/bootstrap-theme/</loc>
+  </url>
+  <url>
     <loc>http://valencia.io/project/flexbox-layout/</loc>
   </url>
   <url>
@@ -33,5 +36,8 @@
   </url>
   <url>
     <loc>http://valencia.io/project/valencia.io_website/</loc>
+  </url>
+  <url>
+    <loc>http://valencia.io/project/wp-chat-simulator/</loc>
   </url>
 </urlset>
