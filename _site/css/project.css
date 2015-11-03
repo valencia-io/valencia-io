@@ -1192,7 +1192,7 @@ footer {
     line-height: 1.5em;
     margin: auto;
     max-width: 35em;
-    text-align: center; }
+    text-align: left; }
 
 .footer-content {
   max-width: 960px;
