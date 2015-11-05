@@ -1,6 +1,6 @@
 ---
 name: Bootstrap theme
-url: http://
+link:
 title: Build your first Bootstrap theme
 description:
 goals:

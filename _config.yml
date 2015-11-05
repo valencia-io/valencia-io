@@ -48,7 +48,7 @@ defaults:
     values:
       layout: "project"
       name: write here the name of the project
-      url: https://project.com/repository.git
+      link: 
       title: 72 characters short description
       description: Long description of the project
       goals:

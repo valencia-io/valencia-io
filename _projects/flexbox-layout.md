@@ -1,6 +1,6 @@
 ---
 name: Flexibilidad
-url:
+link:
 title: Flexbox layouts made simple
 goals:
   - use css classes for managing your layouts.

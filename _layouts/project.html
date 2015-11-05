@@ -5,7 +5,7 @@ layout: blankpage
   <div class="project-header">
     <h1>{{page.name}}</h1>
     <h2>{{page.title}}</h2>
-    
+
     <!-- {% assign member = site.data.members[page.leader] %}
     <p>By: <a rel="member" href="{{ member.twitter }}">
         {{ member.name }}
@@ -29,6 +29,12 @@ layout: blankpage
       <li>{{tech}}</li>
       {% endfor%}
     </ul>
+    {% if page.link %}
+    <h3>More info</h3>
+    <p>
+        Know more about the project at <a href="{{ page.link }}">{{ page.link }}</a>
+    </p>
+    {% endif %}
   </div>
   {{ content }}
   <hr>

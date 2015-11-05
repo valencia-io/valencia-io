@@ -1,6 +1,6 @@
 ---
 name: Wordpress Chat Simulator
-url: http://
+link:
 title: Imitate a live chat
 description: Long description
 goals:

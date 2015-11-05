@@ -1,6 +1,6 @@
 ---
 name: Typography boilerplate
-url:
+link:
 title: A zero setup sass library to manage typography such as profesionals.
 goals:
   - non dependecies

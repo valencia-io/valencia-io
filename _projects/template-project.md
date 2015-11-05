@@ -1,6 +1,6 @@
 ---
 name: Fancy name here
-url: http://
+link:
 title: Short description about the project
 description: Long description
 goals:

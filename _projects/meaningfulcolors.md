@@ -1,10 +1,11 @@
 ---
 name: Meaningfulcolors
-url: http://meaningfulcolors.com
-title: Words transformed into colors. Finding a hexadecimal colors from a dictionary. such as \#2007ED , \#5157E2 , \#BADA55 \#A55157
+link: http://meaningfulcolors.com
+title: Words transformed into colors. Finding a hexadecimal colors from a dictionary.
+description:
 goals:
-  - Main goal to achieve
-  - Secondary goal
+  - Create a color inpiration tool
+  - Learn AngularJS + firebase
 technology:
   - angularjs
   - firebase

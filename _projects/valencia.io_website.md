@@ -1,6 +1,6 @@
 ---
 name: Valencia.io
-url: https://github.com/valencia-io/valencia-io
+link: https://github.com/valencia-io/valencia-io
 title: Develop this site and create rich features for the community
 goals:
   -
