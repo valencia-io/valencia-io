@@ -1293,3 +1293,8 @@ footer {
         .blankpage .content .letter-efect::after {
           height: 4px;
           top: -16px; } }
+
+.more-projects {
+  background: #eee;
+  padding: 40px;
+  border-radius: 5px; }

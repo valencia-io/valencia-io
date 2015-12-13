@@ -5,6 +5,9 @@
     <lastmod>2014-11-30T01:02:55+01:00</lastmod>
   </url>
   <url>
+    <loc>http://valencia.io/404.html</loc>
+  </url>
+  <url>
     <loc>http://valencia.io/</loc>
   </url>
   <url>
@@ -26,19 +29,18 @@
     <loc>http://valencia.io/project/queue.website/</loc>
   </url>
   <url>
+    <loc>http://valencia.io/project/sherpabot/</loc>
+  </url>
+  <url>
     <loc>http://valencia.io/project/template-project/</loc>
   </url>
   <url>
     <loc>http://valencia.io/project/typography-boilerplate/</loc>
   </url>
   <url>
-    <loc>http://valencia.io/project/valencia.io_website/</loc>
+    <loc>http://valencia.io/project/valencia.io_cover/</loc>
   </url>
   <url>
     <loc>http://valencia.io/project/wp-chat-simulator/</loc>
-  </url>
-  <url>
-    <loc>http://valencia.io/404.html</loc>
-    <lastmod>2015-12-13T04:27:06+01:00</lastmod>
   </url>
 </urlset>
