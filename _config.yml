@@ -3,8 +3,8 @@ name: valencia.io
 email: jupegarnica@gmail.com
 description: Where creativity meets code
 
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://valencia.io" # the base hostname & protocol for your site
+baseurl: "/valencia-io/" # the subpath of your site, e.g. /blog/
+url: "http://valencia-io.github.io" # the base hostname & protocol for your site
 permalink:   /:categories/:title/
 
 
